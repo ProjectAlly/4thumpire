@@ -1,8 +1,13 @@
 <html>
+<style>
+	.pull-right{
+		float:right;
+	}
+</style>
 <div class="header">
-	<ul class="nav nav-pills">
-		<li class="pull-right"><a href="#">Login</a></li>
-   	</ul>
+	<?php echo $this->element('login_btn'); ?>
+			
+	
 	<h1>4<sup>th</sup><span style="color: #52a8ec">Umpire</span></h1>
 	<ul class="nav nav-pills myselect" id="btnclass">
 		<li class="pull-right">
