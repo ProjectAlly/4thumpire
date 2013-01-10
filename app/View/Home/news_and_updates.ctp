@@ -12,18 +12,7 @@
 		<div class="span4">
 			<h5>International News</h5>
 			<ul id="ticker">
-				<li>
-					Internationl News item1.
-				</li>
-				<li>
-					Internationl News item2.
-				</li>
-				<li>
-					Internationl News item3.
-				</li>
-				<li>
-					Internationl News item4.
-				</li>
+					<?php echo $this->element('news_ticker', array('temp' => $temp_international_news, 'model' => 'InternationalNews')); ?>
 			</ul>
 		</div>
 		<div class="span4">

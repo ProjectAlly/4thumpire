@@ -39,37 +39,17 @@
 	<div class="row-fluid">
 		<div class="span4">
 			<h5>News and Updates</h5>
-			<ul id="ticker">
-				<li>
-					News item1.
-				</li>
-				<li>
-					News item2.
-				</li>
-				<li>
-					News item3.
-				</li>
-				<li>
-					News item4.
-				</li>
-			</ul>
+				<ul id="ticker">
+					<?php echo $this->element('news_ticker', array('temp' => $temp_news_updates, 'model' => 'NewsAndUpdates')); ?>
+				</ul>
 		</div>
 		<div class="span4">
+		
 			<h5>Clubs Update</h5>
-			<ul id="ticker1">
-				<li>
-					News item1.
-				</li>
-				<li>
-					News item2.
-				</li>
-				<li>
-					News item3.
-				</li>
-				<li>
-					News item4.
-				</li>
-			</ul>
+				<ul id="ticker1">
+					<?php echo $this->element('news_ticker', array('temp' => $temp_club_updates, 'model' => 'ClubUpdates')); ?>
+				</ul>
+		
 		</div>
 		<div class="span4">
 		<h5>Sponsers</h5>

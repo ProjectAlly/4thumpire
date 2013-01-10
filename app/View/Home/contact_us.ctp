@@ -46,7 +46,7 @@
 														   ));
 				echo "</div>";
 				
-				echo $this->Form->submit('Submit Query',array('class' => 'btn span3 offset6'));
+				echo $this->Form->submit('Submit Query',array('class' => 'btn btn-warning span3 offset6'));
 				echo $this->Form->end();
 				
 			?>		
