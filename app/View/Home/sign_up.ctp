@@ -94,11 +94,17 @@
 																   'div' => array('class' => 'controls')
 																   ));
 						echo "</div>";
+						echo $this->Form->submit('Submit',array('class' => 'btn span3 offset10'));
+						echo $this->Form->end();
+						
 						
 				?>
 			</div>
 			<div>
 				<?php 
+						echo $this->Form->create('Register', array ('class' => 'form-horizontal',
+															'url' => array('controller' => 'Home',
+																			'action' => 'registerUser')));
 						echo "<div class=\"control-group\">";
 						echo $this->Form->label('clubName', 'Club name *', array('class' => 'control-label'));
 						echo $this->Form->input('clubName',array('label' => false,
@@ -131,13 +137,13 @@
 																   'div' => array('class' => 'controls')
 																   ));
 						echo "</div>";
+						echo $this->Form->submit('Sign Up',array('class' => 'btn span2 offset10'));
+						echo $this->Form->end();
 						?>
 			</div>
 			<div>
-				<?php 
-						echo $this->Form->submit('Sign Up',array('class' => 'btn span2 offset10'));
-						echo $this->Form->end();
-				?>
+					CONFIRMATION..
+
 			</div>
 		</div>
 	</div>

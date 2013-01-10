@@ -45,7 +45,7 @@ class HomeController extends AppController {
  *
  * @var array
  */
-	public $uses = array('Register', 'Query');
+	public $uses = array('Register', 'Query', 'NewsAndUpdates', 'ClubUpdates', 'InternationalNews');
 
 /**
  * Displays a view
@@ -54,7 +54,8 @@ class HomeController extends AppController {
  * @return void
  */
 	public function index() {
-
+		$this->set('temp_news_updates', $this->NewsAndUpdates->find('all'));
+		$this->set('temp_club_updates', $this->ClubUpdates->find('all'));
 	}
 	
 	public function aboutUs() {
@@ -70,7 +71,7 @@ class HomeController extends AppController {
 	}
 	
 	public function newsAndUpdates() {
-
+		$this->set('temp_international_news', $this->InternationalNews->find('all'));
 	}
 	
 	public function blog() {
@@ -87,7 +88,7 @@ class HomeController extends AppController {
 	public function registerUser(){
 		if(!empty($this->data)){
 			if($this->Register->save($this->data)){
-				//echo "successful";
+						
 			} else {
 				$this->Session->setFlash('Something went wrong please try again.');
 			}
@@ -96,7 +97,7 @@ class HomeController extends AppController {
 	public function submitQuery(){
 		if(!empty($this->data)){
 			if($this->Query->save($this->data)){
-				echo "Query Submitted succesfully";
+				//echo "Query Submitted succesfully";
 				$this->redirect(array('controller' => 'Home', 'action' => 'contactUs'));
 			} else {
 				$this->Session->setFlash('Something went wrong please try again.');
