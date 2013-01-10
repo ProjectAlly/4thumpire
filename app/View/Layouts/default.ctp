@@ -73,10 +73,11 @@
 		?>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 <style>
-	body {
-	  padding-left: 20px;
-	  padding-right: 20px;
-	}
+body {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+}
 </style>
     </head>
     <body>
@@ -94,9 +95,9 @@
 	
 		    <!-- Site content END-->
 		    
-		    <footer>
-				<?php echo $this->element('footer'); ?>
-			</footer>
+		 <footer>
+			<?php echo $this->element('footer'); ?>
+		</footer>
 
 	    <!-- Le javascript -->
 	    <!-- Placed at the end of the document so the pages load faster -->
