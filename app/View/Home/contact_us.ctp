@@ -14,7 +14,7 @@
   				<a href="mailto:#">mail.hardikshah@gmail.com</a>
 			</address>
 		</div>
-		<div class="span5">
+		<div class="span5 well well-small">
 			<h5>Submit a Query:</h5>
 			<?php 
 				echo $this->Form->create('Query', array('class' => 'form-horizontal', 

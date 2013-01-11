@@ -53,40 +53,37 @@ class HomeController extends AppController {
  * @param mixed What page to display
  * @return void
  */
-	public function index() {
-		$this->set('temp_news_updates', $this->NewsAndUpdates->find('all'));
-		$this->set('temp_club_updates', $this->ClubUpdates->find('all'));
-	}
-	
-	public function aboutUs() {
-
-	}
-	
-	public function products() {
-
-	}
-	
-	public function members() {
-
-	}
-	
-	public function newsAndUpdates() {
+	public function beforeFilter(){
 		$this->set('temp_news_updates', $this->NewsAndUpdates->find('all'));
 		$this->set('temp_club_updates', $this->ClubUpdates->find('all'));
 		$this->set('temp_international_news', $this->InternationalNews->find('all'));
+		
+	}
+	
+	public function index() {
+	}
+	
+	public function aboutUs() {
+	}
+	
+	public function products() {
+	}
+	
+	public function members() {
+	}
+	
+	public function newsAndUpdates() {
 	}
 	
 	public function blog() {
-
 	}
-	
-	public function contactUs() {
 
+	public function contactUs() {
 	}
 	
 	public function signUp() {
-
 	}
+
 	public function registerUser(){
 		if(!empty($this->data)){
 			$this->set('form1', $this->data);
@@ -98,6 +95,7 @@ class HomeController extends AppController {
 			}*/
 		}
 	}
+
 	public function submitQuery(){
 		if(!empty($this->data)){
 			if($this->Query->save($this->data)){
@@ -109,5 +107,4 @@ class HomeController extends AppController {
 		}
 	}
 	
-	//test content12
 }
