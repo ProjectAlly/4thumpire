@@ -2,10 +2,7 @@
 <?php 
 	echo $this->Html->css('news-ticker.css');
 ?>
-
 <html lang="en">
-	
-
 	<div class="row-fluid">
 		<div class="span6" style="border: 1px;">
 			<h5>Club News</h5>
