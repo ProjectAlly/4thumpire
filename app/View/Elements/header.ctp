@@ -9,7 +9,7 @@
 			
 	
 	<h1>4<sup>th</sup><span style="color: #52a8ec">Umpire</span></h1>
-	<ul class="nav nav-pills myselect" id="btnclass">
+	<ul class="nav nav-pills">
 		<li class="pull-right">
 			<?php echo $this->Html->link('Sign Up', array('controller' => 'Home', 'action' => 'signUp')); ?>
 		</li>
@@ -28,7 +28,7 @@
 		<li class="pull-right">
 			<?php echo $this->Html->link('About Us', array('controller' => 'Home', 'action' => 'aboutUs')); ?>
 		</li>  					
-		<li class="active pull-right">
+		<li class="pull-right">
 			<?php echo $this->Html->link('Home', array('controller' => 'Home', 'action' => 'index')); ?>
 		</li>
 	</ul>

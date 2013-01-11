@@ -1207,3 +1207,43 @@
 #3 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-01-11 06:47:47 Error: Fatal Error (1): Call to undefined function addClass() in [F:\wamp\www\4thumpire\app\View\Elements\header.ctp, line 14]
+2013-01-11 06:47:47 Error: [FatalErrorException] Call to undefined function addClass()
+#0 F:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\wamp\www\4th...', 14)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\wamp\www\4th...', 14, Array)
+#2 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\wamp\www\4th...', 14, Array)
+#3 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-11 06:48:18 Error: Fatal Error (1): Call to undefined function addClass() in [F:\wamp\www\4thumpire\app\View\Elements\header.ctp, line 14]
+2013-01-11 06:48:18 Error: [FatalErrorException] Call to undefined function addClass()
+#0 F:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\wamp\www\4th...', 14)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\wamp\www\4th...', 14, Array)
+#2 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\wamp\www\4th...', 14, Array)
+#3 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-11 06:48:32 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting ')' in [F:\wamp\www\4thumpire\app\View\Elements\header.ctp, line 14]
+2013-01-11 06:48:32 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting ')'
+#0 F:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\wamp\www\4th...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\wamp\www\4th...', 14, Array)
+#2 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\wamp\www\4th...', 14, Array)
+#3 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-11 06:48:44 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting ')' in [F:\wamp\www\4thumpire\app\View\Elements\header.ctp, line 14]
+2013-01-11 06:48:44 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting ')'
+#0 F:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\wamp\www\4th...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\wamp\www\4th...', 14, Array)
+#2 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\wamp\www\4th...', 14, Array)
+#3 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-11 06:53:56 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [F:\wamp\www\4thumpire\app\View\Elements\header.ctp, line 14]
+2013-01-11 06:53:56 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+#0 F:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\wamp\www\4th...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\wamp\www\4th...', 14, Array)
+#2 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\wamp\www\4th...', 14, Array)
+#3 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
