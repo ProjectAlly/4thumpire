@@ -2,6 +2,7 @@
 <html lang="en">
 	<div class="row-fluid">
 		<div class="span12">
+		<div class="well">
 			<h4>BUILD A FREE WEBSITE FOR YOUR CRICKET CLUB</h4>
 			<p align="center">
 			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
@@ -20,6 +21,7 @@
 			Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, 
 			leo eget bibendum sodales, augue velit cursus nunc,
 			</p>
+		</div>
 		</div>
 	</div>
 </html>

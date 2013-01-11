@@ -2,6 +2,7 @@
 <html lang="en">
 	<div class="row-fluid">
 		<div class="span12">
+		<div class="well">
 			<h3>About Us</h3>
 			<h4>Our Journey so far...</h4>
 			<p align="center">
@@ -21,6 +22,7 @@
 			Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, 
 			leo eget bibendum sodales, augue velit cursus nunc,
 			</p>
+		</div>
 		</div>
 	</div>
 </html>
