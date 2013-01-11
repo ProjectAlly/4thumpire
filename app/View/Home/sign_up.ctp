@@ -19,7 +19,7 @@
 				<li>Club Details</li>
 				<li>Confirmation</li>
 			</ol>
-			<div>
+			<div id="1">
 				<?php 
 						echo $this->Form->create('Register', array ('class' => 'form-horizontal',
 															'url' => array('controller' => 'Home',
@@ -100,7 +100,7 @@
 						
 				?>
 			</div>
-			<div>
+			<div id="2">
 				<?php 
 						echo $this->Form->create('Register', array ('class' => 'form-horizontal',
 															'url' => array('controller' => 'Home',
@@ -141,7 +141,7 @@
 						echo $this->Form->end();
 						?>
 			</div>
-			<div>
+			<div id=3>
 					CONFIRMATION..
 
 			</div>

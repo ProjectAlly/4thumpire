@@ -18,35 +18,14 @@
 		<div class="span4">
 			<h5>Club Cricket News</h5>
 			<ul id="ticker1">
-				<li>
-					Club Cricket News item1.
-				</li>
-				<li>
-					Club Cricket News item2.
-				</li>
-				<li>
-					Club Cricket News item3.
-				</li>
-				<li>
-					Club Cricket News item4.
-				</li>
+					<?php echo $this->element('news_ticker', array('temp' => $temp_club_updates, 'model' => 'ClubUpdates')); ?>
 			</ul>
 		</div>
 		<div class="span4">
 		<h5>News and Annoucement</h5>
 		<ul id="ticker2">
-				<li>
-					News and Annoucement item1.
-				</li>
-				<li>
-					News and Annoucement item2.
-				</li>
-				<li>
-					News and Annoucement item3.
-				</li>
-				<li>
-					News and Annoucement item4.
-				</li>
+					<?php echo $this->element('news_ticker', array('temp' => $temp_club_updates, 'model' => 'ClubUpdates')); ?>
+					<?php echo $this->element('news_ticker', array('temp' => $temp_news_updates, 'model' => 'NewsAndUpdates')); ?>
 			</ul>	
 			<!-- NEED TO IMPLEMENT CAROUSEL -->
 		</div>
