@@ -3,7 +3,7 @@
 	<div class="row-fluid">
 		<div class="span12">
 			<h3>About Us</h3>
-			<h5>Our Journey so far...</h5>
+			<h4>Our Journey so far...</h4>
 			<p align="center">
 			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
 			Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
