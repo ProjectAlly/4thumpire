@@ -2,9 +2,19 @@
 <html lang="en">
 	<div class="row-fluid">
 		<div class="span3">
-			<h5>Address:</h5>
+			<address>
+		  		<strong>Twitter, Inc.</strong><br>
+  				795 Folsom Ave, Suite 600<br>
+  				San Francisco, CA 94107<br>
+  				<abbr title="Phone">Phone:</abbr> (123) 456-7890
+			</address>
+ 
+			<address>
+  				<strong>Hardik Shah</strong><br>
+  				<a href="mailto:#">mail.hardikshah@gmail.com</a>
+			</address>
 		</div>
-		<div class="span5">
+		<div class="span5 well well-small">
 			<h5>Submit a Query:</h5>
 			<?php 
 				echo $this->Form->create('Query', array('class' => 'form-horizontal', 
@@ -36,7 +46,7 @@
 														   ));
 				echo "</div>";
 				
-				echo $this->Form->submit('Submit Query',array('class' => 'btn span3 offset6'));
+				echo $this->Form->submit('Submit Query',array('class' => 'btn btn-warning span3 offset6'));
 				echo $this->Form->end();
 				
 			?>		

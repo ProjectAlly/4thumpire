@@ -45,7 +45,7 @@ class HomeController extends AppController {
  *
  * @var array
  */
-	public $uses = array('Register', 'Query');
+	public $uses = array('Register', 'Query', 'NewsAndUpdates', 'ClubUpdates', 'InternationalNews');
 
 /**
  * Displays a view
@@ -53,56 +53,58 @@ class HomeController extends AppController {
  * @param mixed What page to display
  * @return void
  */
+	public function beforeFilter(){
+		$this->set('temp_news_updates', $this->NewsAndUpdates->find('all'));
+		$this->set('temp_club_updates', $this->ClubUpdates->find('all'));
+		$this->set('temp_international_news', $this->InternationalNews->find('all'));
+		
+	}
+	
 	public function index() {
-
 	}
 	
 	public function aboutUs() {
-
 	}
 	
 	public function products() {
-
 	}
 	
 	public function members() {
-
 	}
 	
 	public function newsAndUpdates() {
-
 	}
 	
 	public function blog() {
-
 	}
-	
-	public function contactUs() {
 
+	public function contactUs() {
 	}
 	
 	public function signUp() {
-
 	}
+
 	public function registerUser(){
 		if(!empty($this->data)){
-			if($this->Register->save($this->data)){
-				//echo "successful";
+			$this->set('form1', $this->data);
+				$this->redirect(array('controller' => 'Home', 'action' => 'signUp'));
+			/*if($this->Register->saveAll($this->data)){
+						
 			} else {
 				$this->Session->setFlash('Something went wrong please try again.');
-			}
+			}*/
 		}
 	}
+
 	public function submitQuery(){
 		if(!empty($this->data)){
 			if($this->Query->save($this->data)){
-				echo "Query Submitted succesfully";
+				//echo "Query Submitted succesfully";
 				$this->redirect(array('controller' => 'Home', 'action' => 'contactUs'));
 			} else {
 				$this->Session->setFlash('Something went wrong please try again.');
 			}
 		}
 	}
-	
 	
 }

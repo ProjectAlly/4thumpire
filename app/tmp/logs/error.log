@@ -977,3 +977,273 @@
 2013-01-06 05:34:01 Error: [MissingControllerException] Controller class ImgController could not be found.
 #0 F:\wamp\www\4thumpire1.0\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-01-08 17:50:59 Error: [MissingActionException] Action HomeController::css() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 17:51:00 Error: [MissingActionException] Action HomeController::js() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 18:09:13 Error: [MissingActionException] Action HomeController::js() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 18:09:13 Error: [MissingActionException] Action HomeController::bootstrap() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 18:09:13 Error: [MissingActionException] Action HomeController::bootstrap() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 18:09:14 Error: [MissingActionException] Action HomeController::bootstrap() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 18:09:59 Error: [MissingActionException] Action HomeController::bootstrap() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 18:10:00 Error: [MissingActionException] Action HomeController::bootstrap() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 18:10:00 Error: [MissingActionException] Action HomeController::bootstrap() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 18:10:00 Error: [MissingActionException] Action HomeController::js() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 18:10:18 Error: [MissingActionException] Action HomeController::bootstrap() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 18:10:19 Error: [MissingActionException] Action HomeController::js() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 18:10:19 Error: [MissingActionException] Action HomeController::bootstrap() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 18:10:19 Error: [MissingActionException] Action HomeController::bootstrap() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 18:11:13 Error: [MissingActionException] Action HomeController::bootstrap() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 18:11:14 Error: [MissingActionException] Action HomeController::bootstrap() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 18:11:14 Error: [MissingActionException] Action HomeController::js() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 18:11:14 Error: [MissingActionException] Action HomeController::bootstrap() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 18:12:37 Error: [MissingActionException] Action HomeController::bootstrap() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 18:12:37 Error: [MissingActionException] Action HomeController::bootstrap() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 18:12:38 Error: [MissingActionException] Action HomeController::bootstrap() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-08 18:12:38 Error: [MissingActionException] Action HomeController::js() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-09 06:40:05 Error: [MissingActionException] Action HomeController::signUp2() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-09 06:41:37 Error: [MissingActionException] Action HomeController::js() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-09 06:41:38 Error: [MissingActionException] Action HomeController::js() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-09 06:41:38 Error: [MissingActionException] Action HomeController::js() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-09 06:41:38 Error: [MissingActionException] Action HomeController::js() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-09 06:41:38 Error: [MissingActionException] Action HomeController::js() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-09 06:44:48 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 06:44:48 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 06:44:48 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 06:44:48 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 06:44:48 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 06:51:36 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 06:51:36 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 06:51:36 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 06:51:36 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 06:51:36 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-09 07:03:14 Error: [MissingActionException] Action HomeController::signUp2() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-10 11:36:06 Error: [MissingViewException] View file "F:\wamp\www\4thumpire\app\View\Home\submit_query.ctp" is missing.
+#0 F:\wamp\www\4thumpire\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 F:\wamp\www\4thumpire\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#4 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-01-10 13:21:15 Error: Fatal Error (1): Call to a member function find() on a non-object in [F:\wamp\www\4thumpire\app\Controller\HomeController.php, line 57]
+2013-01-10 13:21:15 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 F:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'F:\wamp\www\4th...', 57)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'F:\wamp\www\4th...', 57, Array)
+#2 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'F:\wamp\www\4th...', 57, Array)
+#3 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-10 13:40:53 Error: Fatal Error (1): Call to a member function find() on a non-object in [F:\wamp\www\4thumpire\app\Controller\HomeController.php, line 58]
+2013-01-10 13:40:53 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 F:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'F:\wamp\www\4th...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'F:\wamp\www\4th...', 58, Array)
+#2 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'F:\wamp\www\4th...', 58, Array)
+#3 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-10 13:43:31 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE in [F:\wamp\www\4thumpire\app\View\Elements\news_ticker.ctp, line 3]
+2013-01-10 13:43:31 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE
+#0 F:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\wamp\www\4th...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\wamp\www\4th...', 3, Array)
+#2 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\wamp\www\4th...', 3, Array)
+#3 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-10 13:45:27 Error: Fatal Error (4): syntax error, unexpected T_ENDFOREACH in [F:\wamp\www\4thumpire\app\View\Elements\news_ticker.ctp, line 10]
+2013-01-10 13:45:27 Error: [FatalErrorException] syntax error, unexpected T_ENDFOREACH
+#0 F:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\wamp\www\4th...', 10)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\wamp\www\4th...', 10, Array)
+#2 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\wamp\www\4th...', 10, Array)
+#3 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-10 14:09:38 Error: Fatal Error (4): syntax error, unexpected $end in [F:\wamp\www\4thumpire\app\View\Home\index.ctp, line 91]
+2013-01-10 14:09:38 Error: [FatalErrorException] syntax error, unexpected $end
+#0 F:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\wamp\www\4th...', 91)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\wamp\www\4th...', 91, Array)
+#2 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\wamp\www\4th...', 91, Array)
+#3 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-10 14:10:34 Error: Fatal Error (4): syntax error, unexpected $end in [F:\wamp\www\4thumpire\app\View\Home\index.ctp, line 90]
+2013-01-10 14:10:34 Error: [FatalErrorException] syntax error, unexpected $end
+#0 F:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\wamp\www\4th...', 90)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\wamp\www\4th...', 90, Array)
+#2 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\wamp\www\4th...', 90, Array)
+#3 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-11 06:47:47 Error: Fatal Error (1): Call to undefined function addClass() in [F:\wamp\www\4thumpire\app\View\Elements\header.ctp, line 14]
+2013-01-11 06:47:47 Error: [FatalErrorException] Call to undefined function addClass()
+#0 F:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\wamp\www\4th...', 14)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\wamp\www\4th...', 14, Array)
+#2 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\wamp\www\4th...', 14, Array)
+#3 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-11 06:48:18 Error: Fatal Error (1): Call to undefined function addClass() in [F:\wamp\www\4thumpire\app\View\Elements\header.ctp, line 14]
+2013-01-11 06:48:18 Error: [FatalErrorException] Call to undefined function addClass()
+#0 F:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'F:\wamp\www\4th...', 14)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'F:\wamp\www\4th...', 14, Array)
+#2 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'F:\wamp\www\4th...', 14, Array)
+#3 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-11 06:48:32 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting ')' in [F:\wamp\www\4thumpire\app\View\Elements\header.ctp, line 14]
+2013-01-11 06:48:32 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting ')'
+#0 F:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\wamp\www\4th...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\wamp\www\4th...', 14, Array)
+#2 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\wamp\www\4th...', 14, Array)
+#3 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-11 06:48:44 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting ')' in [F:\wamp\www\4thumpire\app\View\Elements\header.ctp, line 14]
+2013-01-11 06:48:44 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting ')'
+#0 F:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\wamp\www\4th...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\wamp\www\4th...', 14, Array)
+#2 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\wamp\www\4th...', 14, Array)
+#3 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-11 06:53:56 Error: Fatal Error (4): syntax error, unexpected ')', expecting ',' or ';' in [F:\wamp\www\4thumpire\app\View\Elements\header.ctp, line 14]
+2013-01-11 06:53:56 Error: [FatalErrorException] syntax error, unexpected ')', expecting ',' or ';'
+#0 F:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'F:\wamp\www\4th...', 14)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'F:\wamp\www\4th...', 14, Array)
+#2 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'F:\wamp\www\4th...', 14, Array)
+#3 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

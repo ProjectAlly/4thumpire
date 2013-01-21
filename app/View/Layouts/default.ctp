@@ -1,4 +1,5 @@
 <?php
+//test ankur
 /**
  *
  * Twitter Bootstrap CakePHP Default Layout
@@ -72,10 +73,10 @@
 		?>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 <style>
-	body {
-	  padding-left: 20px;
-	  padding-right: 20px;
-	}
+body {
+	padding-left: 20px;
+	padding-right: 20px;
+}
 </style>
     </head>
     <body>
@@ -83,24 +84,7 @@
 		    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 	    <![endif]-->
 	    <header>
-		    <div class="header">
-		    	<ul class="nav nav-pills">
-		    		<li class="pull-right"><a href="#">Login</a></li>
-		    		<li class="pull-right"><a href="#">Registered Users</a></li>
-		    	</ul>
-				<h1>4<sup>th</sup><span style="color: #52a8ec">Umpire</span></h1>
-				<ul class="nav nav-pills" id="btnclass">
-  					<li class="pull-right"><?php echo $this->Html->link('Sign Up', array('controller' => 'Home', 'action' => 'signUp')); ?></li>
-  					<li class="pull-right"><?php echo $this->Html->link('Contact Us', array('controller' => 'Home', 'action' => 'contactUs')); ?></li>
-  					<li class="pull-right"><?php echo $this->Html->link('Blog', array('controller' => 'Home', 'action' => 'blog')); ?></li>
-  					<li class="pull-right"><?php echo $this->Html->link('News and Updates', array('controller' => 'Home', 'action' => 'newsAndUpdates')); ?></li>
-  					<li class="pull-right"><?php echo $this->Html->link('Members', array('controller' => 'Home', 'action' => 'members')); ?></li>
-  					<li class="pull-right"><?php echo $this->Html->link('Products', array('controller' => 'Home', 'action' => 'products')); ?></li>
-  					<li class="pull-right"><?php echo $this->Html->link('About Us', array('controller' => 'Home', 'action' => 'aboutUs')); ?></li>
-  					<li class="active pull-right"><?php echo $this->Html->link('Home', array('controller' => 'Home', 'action' => 'index')); ?></li>
-				</ul>
-				<hr>
-			</div>
+			<?php echo $this->element('header'); ?>
 		</header>
 		    <!-- Site content -->
 	
@@ -110,32 +94,9 @@
 	
 		    <!-- Site content END-->
 		    
-		    <footer>
-				<hr>
-				<div class="row-fluid">
-  					<div class="span4">
-  						<b>4<sup>th</sup>Umpire</b>
-  							<ul class="nav">
-  								<li>Our Story</li>
-  								<li>Vision and Values</li>
-  							</ul>	 
-  					</div>
-  					<div class="span4">
-  						<b>Join Us</b>
-  							<ul class="nav">
-  								<li>Facebook</li>
-  								<li>Twitter</li>
-  							</ul>	 
-  					</div>
-  					<div class="span4">
-  						<b>Contact Us</b>
-  							<ul class="nav">
-  								<li>contact_us@4thumpire.co.uk</li>
-  								<li>Reg.in England | UB1 2AA | 12334</li>
-  							</ul>	 
-  					</div>
-				</div>
-			</footer>
+		 <footer>
+			<?php echo $this->element('footer'); ?>
+		</footer>
 
 	    <!-- Le javascript -->
 	    <!-- Placed at the end of the document so the pages load faster -->

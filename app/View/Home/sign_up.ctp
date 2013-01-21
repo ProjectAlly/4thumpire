@@ -1,17 +1,25 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-	<div class="row-fluid">
-		<div class="span10">
-			<h5>Create 4<sup>th</sup> Umpire Account</h5>
-			<br/>
-			<!-- <div class="tabbable tabs-left">
-				<ul class="nav nav-tabs">
-			    	<li class="active"><a href="#personalDetails" data-toggle="tab">Personal Details</a></li>
-			    	<li><a href="#clubDetails" data-toggle="tab">Club Details</a></li>
-			  	</ul>
-				<div class="tab-content">
-					<div class="tab-pane active" id="personalDetails">-->
-					    <?php 
+<head>
+	<?php
+		//BOOTSTRAP WIZARD CSS 
+		echo $this->Html->css('bootstrap.min.css');
+		echo $this->Html->css('bwizard/bwizard.min.css');
+		echo $this->Html->css('bwizard/bwizard.css');
+	?>
+</head>
+<body>
+
+   	<div class="container">
+		<h4>Create 4<sup>th</sup> Umpire Account</h4>
+		<div id="wizard">
+			<ol>
+				<li>Personal Details</li>
+				<li>Club Details</li>
+				<li>Confirmation</li>
+			</ol>
+			<div id="1">
+				<?php 
 						echo $this->Form->create('Register', array ('class' => 'form-horizontal',
 															'url' => array('controller' => 'Home',
 																			'action' => 'registerUser')));
@@ -85,91 +93,67 @@
 																   'div' => array('class' => 'controls')
 																   ));
 						echo "</div>";
-						?>
-					<!-- </div> <!-- Tab 1 ends -->
-			  	
-					 <!--  <div class="tab-pane" id="clubDetails">
-				  	
-					</div> <!-- Tab 2 ends -->
-				<!-- </div>				  
-			</div> -->
-						<?php 
-						echo $this->Form->submit('Sign Up',array('class' => 'btn span1 offset5'));
+						echo $this->Form->submit('Submit',array('class' => 'btn span3 offset10'));
 						echo $this->Form->end();
-						?>
 						
-			
-			
-			
-			<?php
-			/* FOR LOGIN -------------------			
-					echo $this->Form->create('Register',array('class' => 'form-horizontal'));
-					echo "<div class=\"control-group\">";
-						echo $this->Form->label('inputEmail', 'Email', array('class' => 'control-label'));
-						echo $this->Form->input('inputEmail',array(
-																'label' => false,
-																'placeholder' => 'Email',
-																'div' => array(
-																	'class' => 'controls'
-																	)
-																));
-					echo "</div>";
-					echo "<div class=\"control-group\">";
-						echo $this->Form->label('inputPassword', 'Password', array('class' => 'control-label'));
-						echo $this->Form->input('inputPassword',array('label' => false,
-																  'placeholder' => 'Password',
-																  'type' => 'password',
-																  'div' => array(
-																	'class' => 'controls'
-																	)
+						
+				?>
+			</div>
+			<div id="2">
+				<?php 
+						echo $this->Form->create('Register', array ('class' => 'form-horizontal',
+															'url' => array('controller' => 'Home',
+																			'action' => 'registerUser')));
+						echo "<div class=\"control-group\">";
+						echo $this->Form->label('clubName', 'Club name *', array('class' => 'control-label'));
+						echo $this->Form->input('clubName',array('label' => false,
+																   'div' => array('class' => 'controls')
 																   ));
-					echo "</div>";
-					echo "<div class=\"control-group\">";
-					echo "<div class=\"controls\">";
-						echo $this->Form->submit('Sign Up',array('class' => 'btn'));
-						echo $this->Form->end();
-					echo "</div>";
-					echo "</div>";
-					?>		
-		</div>
-		<div class="span1">
-			<h5>OR</h5>
-		</div>
-		<div class="span6">
-			<h5>Sign Up with Facebook</h5>
-			<br/>
-			<?php			
-					echo $this->Form->create('Register',array('class' => 'form-horizontal'));
-					echo "<div class=\"control-group\">";
-						echo $this->Form->label('inputEmail', 'FB UserName', array('class' => 'control-label'));
-						echo $this->Form->input('inputEmail',array(
-																'label' => false,
-																'placeholder' => 'User name', 
-																'div' => array(
-																	'class' => 'controls'
-																	)
-																));
-					echo "</div>";
-					echo "<div class=\"control-group\">";
-						echo $this->Form->label('inputPassword','FB Password', array('class' => 'control-label'));
-						echo $this->Form->input('inputPassword',array('label' => false,
-																  'placeholder' => 'Password',
-																  'type' => 'password',
-																  'div' => array(
-																	'class' => 'controls'
-																	)
+						echo "</div>";
+						echo "<div class=\"control-group\">";
+						echo $this->Form->label('leagueName', 'League name *', array('class' => 'control-label'));
+						echo $this->Form->input('leagueName',array('label' => false,
+																   'div' => array('class' => 'controls')
 																   ));
-					echo "</div>";
-					echo "<div class=\"control-group\">";
-					echo "<div class=\"controls\">";
-						echo $this->Form->submit('Sign Up',array('class' => 'btn'));
+						echo "</div>";
+						echo "<div class=\"control-group\">";
+						echo $this->Form->label('clubCountry', 'Country *', array('class' => 'control-label'));
+						echo $this->Form->input('clubCountry',array('label' => false,
+																   'div' => array('class' => 'controls')
+																   ));
+						echo "</div>";
+						echo "<div class=\"control-group\">";
+						echo $this->Form->label('clubAge', 'Club age *', array('class' => 'control-label'));
+						echo $this->Form->input('clubAge', array('label' => false,
+																	'options' => array('Under 18s', 'Over 18s', 'All ages'),
+																   'div' => array('class' => 'controls')
+																   ));
+						echo "</div>";
+						echo "<div class=\"control-group\">";
+						echo $this->Form->label('clubGender', 'Club Gender *', array('class' => 'control-label'));
+						echo $this->Form->input('clubGender', array('label' => false,
+																	'options' => array('Male', 'Female', 'Mixed'),
+																   'div' => array('class' => 'controls')
+																   ));
+						echo "</div>";
+						echo $this->Form->submit('Sign Up',array('class' => 'btn span2 offset10'));
 						echo $this->Form->end();
-					echo "</div>";
-					echo "</div>";
-					 
-					---------------LOGIN OVER */
-					?>		
+						?>
+			</div>
+			<div id=3>
+					CONFIRMATION..
 
+			</div>
 		</div>
 	</div>
+
+<?php 
+	//BOOTSTRAP WIZARD SCRIPTS
+	echo $this->Html->script('bwizard/jquery.min.js');
+	echo $this->Html->script('bwizard/bwizard.min.js'); 
+?>
+<script type="text/javascript">
+	$("#wizard").bwizard();
+</script>
+</body>
 </html>

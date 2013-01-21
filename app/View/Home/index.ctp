@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
 <?php 
 	//JS FOR CAROUSEL
 	echo $this->Html->script('vendor/src/bootstrap-carousel.js');
 	//CSS FOR NEWS TICKER
 	echo $this->Html->css('news-ticker.css');
 ?>
-
-<html lang="en">
+</head>
 	<div class="row-fluid">
 		<div class="span12">
 			<!--  
@@ -37,45 +38,28 @@
 	</div>
 
 	<div class="row-fluid">
-		<div class="span4">
-			<h5>News and Updates</h5>
-			<ul id="ticker">
-				<li>
-					News item1.
-				</li>
-				<li>
-					News item2.
-				</li>
-				<li>
-					News item3.
-				</li>
-				<li>
-					News item4.
-				</li>
-			</ul>
+		<div class="span4 well">
+			<h4>News and Updates</h4>
+				<ul id="ticker">
+					<?php echo $this->element('news_ticker', array('temp' => $temp_news_updates, 'model' => 'NewsAndUpdates')); ?>
+				</ul>
 		</div>
-		<div class="span4">
-			<h5>Clubs Update</h5>
-			<ul id="ticker1">
-				<li>
-					News item1.
-				</li>
-				<li>
-					News item2.
-				</li>
-				<li>
-					News item3.
-				</li>
-				<li>
-					News item4.
-				</li>
-			</ul>
+		<div class="span4 well">
+			<h4>Clubs Update</h4>
+				<ul id="ticker1">
+					<?php echo $this->element('news_ticker', array('temp' => $temp_club_updates, 'model' => 'ClubUpdates')); ?>
+				</ul>
 		</div>
-		<div class="span4">
-		<h5>Sponsers</h5>
-			
-			<!-- NEED TO IMPLEMENT CAROUSEL -->
-		</div>
+		<div class="span4 well">
+			<h4>Sponsors</h4>
+				<p>
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+				Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
+				parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
+				pretium quis, sem. Nulla consequat massa quis enim. 
+				</p>
+				<!-- NEED TO IMPLEMENT CAROUSEL -->
+			</div>
 	</div>
 </html>
 <script>
