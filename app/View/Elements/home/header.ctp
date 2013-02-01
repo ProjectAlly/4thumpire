@@ -6,7 +6,6 @@
 	}
 </style>
 <div class="header">
-	<?php echo $this->element('login_btn'); ?>
 	
 	<h1>4<sup>th</sup><span style="color: #08C">Umpire</span></h1>
 	<ul class="nav nav-pills">
