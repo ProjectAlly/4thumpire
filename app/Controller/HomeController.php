@@ -57,7 +57,6 @@ class HomeController extends AppController {
 		$this->set('temp_news_updates', $this->NewsAndUpdates->find('all'));
 		$this->set('temp_club_updates', $this->ClubUpdates->find('all'));
 		$this->set('temp_international_news', $this->InternationalNews->find('all'));
-		
 	}
 	
 	public function index() {
@@ -85,17 +84,13 @@ class HomeController extends AppController {
 	}
 
 	public function registerUser(){
-		if(!empty($this->data)){
-			$this->set('form1', $this->data);
-				$this->redirect(array('controller' => 'Home', 'action' => 'signUp'));
-			/*if($this->Register->saveAll($this->data)){
-						
-			} else {
-				$this->Session->setFlash('Something went wrong please try again.');
-			}*/
-		}
-	}
 
+	}
+	
+	public function registerUser_form2(){
+
+	}
+	
 	public function submitQuery(){
 		if(!empty($this->data)){
 			if($this->Query->save($this->data)){

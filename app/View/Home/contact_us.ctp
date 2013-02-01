@@ -27,14 +27,14 @@
 														   ));
 				echo "</div>";
 				echo "<div class=\"control-group\">";
-				echo $this->Form->label('contactNumber', 'Contact number *', array('class' => 'control-label'));
-				echo $this->Form->input('contactNumber',array('label' => false,
+				echo $this->Form->label('contact_number', 'Contact number *', array('class' => 'control-label'));
+				echo $this->Form->input('contact_number',array('label' => false,
 														   'div' => array('class' => 'controls')
 														   ));
 				echo "</div>";
 				echo "<div class=\"control-group\">";
-				echo $this->Form->label('inputEmail', 'Email address *', array('class' => 'control-label'));
-				echo $this->Form->input('inputEmail',array('label' => false,
+				echo $this->Form->label('input_email', 'Email address *', array('class' => 'control-label'));
+				echo $this->Form->input('input_email',array('label' => false,
 														   'div' => array('class' => 'controls')
 														   ));
 				echo "</div>";
