@@ -35,4 +35,9 @@ class AppController extends Controller {
 	//public $theme = 'TwitterBootstrap';
 	public $components = array('DebugKit.Toolbar');
 	var $helpers = array('Cache','Html','Session','Form','Combinator.Combinator');
+	
+	function getClubId(){
+		return $this->Club->find('first' ,array('conditions' => 
+														array('Club.website' => $this->request->params['club'])));
+	}
 }
