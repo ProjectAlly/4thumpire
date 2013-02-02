@@ -3,15 +3,17 @@
 	<div class="row-fluid">
 			<div class="tabbable">
 				<ul class="nav nav-pills nav-stacked span2">
-					<li class="active"><a href="#tab1" data-toggle="tab">Tab 1</a></li>
-					<li><a href="#tab2" data-toggle="tab">Tab 2</a></li>
-					<li><a href="#tab3" data-toggle="tab">Tab 3</a></li>
-					<li><a href="#tab4" data-toggle="tab">Tab 4</a></li>
+					<li class="active"><a href="#tab1" data-toggle="tab">Grounds</a></li>
+					<li><a href="#tab2" data-toggle="tab">Committee</a></li>
+					<li><a href="#tab3" data-toggle="tab">Subscriptions</a></li>
+					<li><a href="#tab4" data-toggle="tab">Club Marks</a></li>
+					<li><a href="#tab5" data-toggle="tab">Scholarships</a></li>
+					<li><a href="#tab6" data-toggle="tab">Partners</a></li>
 				</ul>
 				<div class="tab-content span10">
 					<div id="tab1" class="tab-pane active">
-					    <h4>Pane 2 Content</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod congue bibendum. Aliquam erat volutpat. Phasellus eget justo lacus. Vivamus pharetra ullamcorper massa, nec ultricies metus gravida egestas.</p>
+					    <h4>Grounds</h4>
+						<?php print_r($ground_info); ?>
 					</div>
 					<div id="tab2" class="tab-pane">
 					    <h4>Pane 2 Content</h4>

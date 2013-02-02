@@ -1,13 +1,13 @@
 <?php
-class ClubController extends AppController {
+class ContactUsController extends AppController {
 
-	public $name = 'Club';
+	public $name = 'ContactUs';
 	public $helpers = array('Html','Form');	
-	public $uses = array('Club');
+	public $uses = array('ContactUs');
 	
 	public function beforeFilter(){
 		$this->layout = 'club';
-		$this -> set('club_info', $this->Club->find('first' ,array('conditions' => 
+		$this -> set('club_info', $this->ContactUs->find('first' ,array('conditions' => 
 														array('Club.website' => $this->request->params['club']))));	
 	}
 	

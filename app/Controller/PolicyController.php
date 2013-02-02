@@ -1,7 +1,7 @@
 <?php
-class ClubHomeController extends AppController {
+class PolicyController extends AppController {
 
-	public $name = 'ClubHome';
+	public $name = 'Policy';
 	public $helpers = array('Html','Form');	
 	public $uses = array('Club');
 	

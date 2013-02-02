@@ -1,7 +1,7 @@
 <?php
-class ClubHomeController extends AppController {
+class GalleryController extends AppController {
 
-	public $name = 'ClubHome';
+	public $name = 'Gallery';
 	public $helpers = array('Html','Form');	
 	public $uses = array('Club');
 	

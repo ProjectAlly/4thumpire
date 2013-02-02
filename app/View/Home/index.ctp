@@ -47,7 +47,7 @@
 		<div class="span4 well">
 			<h4>Clubs Update</h4>
 				<ul id="ticker1">
-					<?php echo $this->element('news_ticker', array('temp' => $temp_club_updates, 'model' => 'ClubUpdates')); ?>
+					<?php echo $this->element('news_ticker', array('temp' => $temp_club_updates, 'model' => 'ClubUpdate')); ?>
 				</ul>
 		</div>
 		<div class="span4 well">

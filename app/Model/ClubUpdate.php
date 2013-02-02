@@ -1,6 +1,6 @@
 <?php
-	class ClubUpdates extends AppModel {
-		public $name = 'ClubUpdates';
+	class ClubUpdate extends AppModel {
+		public $name = 'ClubUpdate';
 		public $useTable = 'club_updates';
 	}
 ?>

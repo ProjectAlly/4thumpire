@@ -1,7 +1,7 @@
 <?php
-class ClubHomeController extends AppController {
+class ColtsController extends AppController {
 
-	public $name = 'ClubHome';
+	public $name = 'Colts';
 	public $helpers = array('Html','Form');	
 	public $uses = array('Club');
 	

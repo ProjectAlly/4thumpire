@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 01, 2013 at 09:38 PM
+-- Generation Time: Feb 02, 2013 at 05:02 PM
 -- Server version: 5.5.8
 -- PHP Version: 5.3.5
 
@@ -128,6 +128,47 @@ INSERT INTO `club_updates` (`id`, `title`, `description`, `date`) VALUES
 (2, 'Sample club updates 2', '', '2013-01-22'),
 (3, 'Sample club updates 3', '', '2013-01-31'),
 (4, 'Sample club updates 4', '', '2013-01-31');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `club_welfare_officer`
+--
+
+CREATE TABLE IF NOT EXISTS `club_welfare_officer` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `information` varchar(255) NOT NULL,
+  `club_id` int(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `club_welfare_officer`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `colts`
+--
+
+CREATE TABLE IF NOT EXISTS `colts` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `colt_info` varchar(255) NOT NULL,
+  `chairman` varchar(255) NOT NULL,
+  `chairman_info` varchar(255) NOT NULL,
+  `age_group` varchar(255) NOT NULL,
+  `colt_coduct` varchar(255) NOT NULL,
+  `club_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Dumping data for table `colts`
+--
+
 
 -- --------------------------------------------------------
 
@@ -439,11 +480,12 @@ CREATE TABLE IF NOT EXISTS `subscriptions` (
 --
 
 CREATE TABLE IF NOT EXISTS `titles` (
-  `id` int(10) NOT NULL,
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `info` varchar(255) NOT NULL,
-  `club_id` int(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `club_id` int(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 --
 -- Dumping data for table `titles`
@@ -457,10 +499,11 @@ CREATE TABLE IF NOT EXISTS `titles` (
 --
 
 CREATE TABLE IF NOT EXISTS `tours` (
-  `id` int(10) NOT NULL,
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `information` varchar(255) NOT NULL,
-  `club_id` int(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `club_id` int(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 --
 -- Dumping data for table `tours`
