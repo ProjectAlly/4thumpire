@@ -13,19 +13,27 @@
 				<div class="tab-content span10">
 					<div id="tab1" class="tab-pane active">
 					    <h4>Grounds</h4>
-						<?php print_r($ground_info); ?>
+						<?php print_r($groundInfo); ?>
 					</div>
 					<div id="tab2" class="tab-pane">
-					    <h4>Pane 2 Content</h4>
-					    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod congue bibendum. Aliquam erat volutpat. Phasellus eget justo lacus. Vivamus pharetra ullamcorper massa, nec ultricies metus gravida egestas.</p>
+					    <h4>Committee</h4>
+						<?php print_r($committeeInfo); ?>
 					</div>
 					<div id="tab3" class="tab-pane">
-					     <h4>Pane 3 Content</h4>
-					     <p>Ut porta rhoncus ligula, sed fringilla felis feugiat eget. In non purus quis elit iaculis tincidunt. Donec at ultrices est.</p>
+					     <h4>Subscriptions</h4>
+						<?php print_r($subscriptionInfo); ?>
 					</div>
 					<div id="tab4" class="tab-pane">
-					      <h4>Pane 4 Content</h4>
-						  <p>Donec semper vestibulum dapibus. Integer et sollicitudin metus. Vivamus at nisi turpis. Phasellus vel tellus id felis cursus hendrerit. Suspendisse et arcu felis, ac gravida turpis. Suspendisse potenti.</p>
+					      <h4>Club Marks</h4>
+						<?php print_r($marksInfo); ?>
+					</div>
+					<div id="tab5" class="tab-pane">
+					      <h4>Scholarships</h4>
+						<?php print_r($scholarshipInfo); ?>
+					</div>
+					<div id="tab6" class="tab-pane">
+					      <h4>Partners</h4>
+						<?php print_r($partnerInfo); ?>
 					</div>
 				</div><!-- /.tab-content -->
 			</div><!-- /.tabbable -->

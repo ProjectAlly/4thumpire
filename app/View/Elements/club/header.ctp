@@ -1,12 +1,4 @@
 <html>
-<head>
-<style>
-	.divider-vertical{
-		padding-left:2px;
-		padding-right:2px;	
-	}
-</style>
-</head>
 <?php $cont = $this->request->params['controller']; ?>
 <div class="header">
 	<br/>
