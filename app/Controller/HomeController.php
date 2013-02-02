@@ -45,7 +45,7 @@ class HomeController extends AppController {
  *
  * @var array
  */
-	public $uses = array('Register', 'Query', 'NewsAndUpdates', 'ClubUpdates', 'InternationalNews');
+	public $uses = array('Register', 'Query', 'NewsAndUpdates', 'ClubUpdate', 'InternationalNews');
 
 /**
  * Displays a view
@@ -55,7 +55,7 @@ class HomeController extends AppController {
  */
 	public function beforeFilter(){
 		$this->set('temp_news_updates', $this->NewsAndUpdates->find('all'));
-		$this->set('temp_club_updates', $this->ClubUpdates->find('all'));
+		$this->set('temp_club_updates', $this->ClubUpdate->find('all'));
 		$this->set('temp_international_news', $this->InternationalNews->find('all'));
 	}
 	
