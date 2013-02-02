@@ -1,34 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-</head>
 	<div class="row-fluid">
-		<div class="span2 well">
-			<h4>Welcome Message</h4>
-					<?php echo $club_info['Club']['club_message']; ?>
-		</div>
-		<div class="span6 well">
-			<h4></h4>
-		</div>
-		<div class="span4">
-			<div class="well">
-				<h4>News & Updates</h4>
-					<p>
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-					Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
-					parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
-					pretium quis, sem. Nulla consequat massa quis enim. 
-					</p>
-			</div>
-			<div class="well">
-				<h4>Sponsors</h4>
-					<p>
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-					Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
-					parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
-					pretium quis, sem. Nulla consequat massa quis enim. 
-					</p>
-			</div>
-		</div>
+			<div class="tabbable">
+				<ul class="nav nav-pills nav-stacked span2">
+					<li class="active"><a href="#tab1" data-toggle="tab">Heritage</a></li>
+					<li><a href="#tab2" data-toggle="tab">Honours</a></li>
+					<li><a href="#tab3" data-toggle="tab">Old Players</a></li>
+					<li><a href="#tab4" data-toggle="tab">Titles (Cups)</a></li>
+				</ul>
+				<div class="tab-content span10">
+					<div id="tab1" class="tab-pane active">
+					    <h4>Heritage</h4>
+						<?php
+							foreach ($heritageInfo as $heritage) {
+								echo "<b>".$heritage['Heritage']['information']."</b><br/>";
+								echo "<br/><br/>";
+							}
+						?>
+					</div>
+					<div id="tab2" class="tab-pane">
+					    <h4>Honours</h4>
+						<?php 
+							foreach ($honourInfo as $honour) {
+								echo "<b>".$honour['Honour']['name']."</b><br/>";
+								echo "<br/><br/>";
+							}
+						?>
+					</div>
+					<div id="tab3" class="tab-pane">
+					     <h4>Old Players</h4>
+						<?php
+							foreach ($oldPlayerInfo as $oldPlayer) {
+								echo "<b>".$oldPlayer['OldPlayer']['name']."</b><br/>";
+								echo "<br/><br/>";
+							}
+						?>
+					</div>
+					<div id="tab4" class="tab-pane">
+					      <h4>Titles (Cups)</h4>
+						<?php  
+							foreach ($titleInfo as $title) {
+								echo "<b>".$title['Title']['name']."</b><br/>";
+								echo $title['Title']['info']."<br/>";
+								echo "<br/><br/>";
+							}
+						?>
+					</div>
+				</div><!-- /.tab-content -->
+			</div><!-- /.tabbable -->
 	</div>
 </html>

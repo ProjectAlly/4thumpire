@@ -13,27 +13,64 @@
 				<div class="tab-content span10">
 					<div id="tab1" class="tab-pane active">
 					    <h4>Grounds</h4>
-						<?php print_r($groundInfo); ?>
+						<?php
+							foreach ($groundInfo as $ground) {
+								echo "<b>".$ground['Ground']['name']."</b><br/>";
+								echo $ground['Ground']['info']."<br/>";
+								echo "<br/><br/>";
+							}
+						?>
 					</div>
 					<div id="tab2" class="tab-pane">
 					    <h4>Committee</h4>
-						<?php print_r($committeeInfo); ?>
+						<?php
+							foreach ($committeeInfo as $com) {
+								echo "<b>".$com['Committee']['member_name']."</b><br/>";
+								echo "<br/><br/>";
+							}
+						
+						?>
 					</div>
 					<div id="tab3" class="tab-pane">
 					     <h4>Subscriptions</h4>
-						<?php print_r($subscriptionInfo); ?>
+						<?php
+							foreach ($subscriptionInfo as $sub) {
+								echo "<b>".$sub['Subscription']['member_name']."</b><br/>";
+								echo "<br/><br/>";
+							}
+						
+						?>
 					</div>
 					<div id="tab4" class="tab-pane">
 					      <h4>Club Marks</h4>
-						<?php print_r($marksInfo); ?>
+						<?php
+							foreach ($marksInfo as $mark) {
+								echo "<b>".$mark['Marks']['award_name']."</b><br/>";
+								echo $mark['Marks']['award_info']."<br/>";
+								echo "<br/><br/>";
+							}
+						
+						?>
 					</div>
 					<div id="tab5" class="tab-pane">
 					      <h4>Scholarships</h4>
-						<?php print_r($scholarshipInfo); ?>
+						<?php 
+							foreach ($scholarshipInfo as $sch) {
+								echo "<b>".$sch['Scholarship']['name']."</b><br/>";
+								echo "<br/><br/>";
+							}
+						
+						?>
 					</div>
 					<div id="tab6" class="tab-pane">
 					      <h4>Partners</h4>
-						<?php print_r($partnerInfo); ?>
+						<?php
+							foreach ($partnerInfo as $partner) {
+								echo "<b>".$partner['Partner']['name']."</b><br/>";
+								echo "<br/><br/>";
+							}
+						
+						?>
 					</div>
 				</div><!-- /.tab-content -->
 			</div><!-- /.tabbable -->
