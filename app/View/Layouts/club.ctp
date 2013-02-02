@@ -83,7 +83,7 @@ body {
 		    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 	    <![endif]-->
 	    <header>
-			<?php echo $this->element('home/header'); ?>
+			<?php echo $this->element('club/header'); ?>
 		</header>
 		    <!-- Site content -->
 	
@@ -94,7 +94,7 @@ body {
 		    <!-- Site content END-->
 		    
 		 <footer>
-			<?php echo $this->element('home/footer'); ?>
+			<?php echo $this->element('club/footer'); ?>
 		</footer>
 
 	    <!-- Le javascript -->
