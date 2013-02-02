@@ -18,11 +18,10 @@
 				<li>Club Details</li>
 				<li>Confirmation</li>
 			</ol>
-			<div id="1">
+			<div>
 				<?php 
 						echo $this->Form->create('Register', array ('class' => 'form-horizontal',
-															'url' => array('controller' => 'Home',
-																			'action' => 'registerUser')));
+															'url' => array('controller' => 'Home', 'action' => 'registerUser')));
 						echo "<div class=\"control-group\">";
 						echo $this->Form->label('fname', 'First name *', array('class' => 'control-label'));
 						echo $this->Form->input('fname',array('label' => false,
@@ -93,17 +92,17 @@
 																   'div' => array('class' => 'controls')
 																   ));
 						echo "</div>";
-						echo $this->Form->submit('Submit',array('class' => 'btn span3 offset10'));
+						echo $this->Form->submit('Save and click Next',array('class' => 'btn span3 offset10'));
 						echo $this->Form->end();
 						
 						
 				?>
 			</div>
-			<div id="2">
+			<div>
 				<?php 
 						echo $this->Form->create('Register', array ('class' => 'form-horizontal',
 															'url' => array('controller' => 'Home',
-																			'action' => 'registerUser')));
+																			'action' => 'registerUser_form2')));
 						echo "<div class=\"control-group\">";
 						echo $this->Form->label('clubName', 'Club name *', array('class' => 'control-label'));
 						echo $this->Form->input('clubName',array('label' => false,
@@ -140,7 +139,7 @@
 						echo $this->Form->end();
 						?>
 			</div>
-			<div id=3>
+			<div>
 					CONFIRMATION..
 
 			</div>
@@ -154,6 +153,8 @@
 ?>
 <script type="text/javascript">
 	$("#wizard").bwizard();
-</script>
+	$("#wizard").bwizard({ show: function (click, ui) {
+			
+		 } });</script>
 </body>
 </html>

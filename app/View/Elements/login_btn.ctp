@@ -1,5 +1,3 @@
-<div class="navbar navbar-inverse">
-	<div class="navbar-inner" style="padding: 0;">
 				<ul class="nav pull-right">
 					<li class="dropdown">
 						<a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
@@ -14,12 +12,6 @@
 						</div>
 					</li>
 				</ul>
-			</div>
-			<!--/.nav-collapse -->
-	</div>
-	<!--/.navbar-inner -->
-</div>
-<!--/.navbar -->
 
 
 
