@@ -3,7 +3,7 @@ class ColtsController extends AppController {
 
 	public $name = 'Colts';
 	public $helpers = array('Html','Form');	
-	public $uses = array('Club','Colt');
+	public $uses = array('Club', 'Colt', 'ClubWelfareOfficer');
 	
 	public function beforeFilter(){
 		$this->layout = 'club';
@@ -16,6 +16,8 @@ class ColtsController extends AppController {
 		$id = $this->clubId['Club']['id'];
 		$this-> set('coltInfo', $this->Colt->find('all' ,array('conditions' => 
 							array('Colt.club_id' => $id))));
+		$this-> set('welfareOfficerInfo', $this->ClubWelfareOfficer->find('all' ,array('conditions' => 
+							array('ClubWelfareOfficer.club_id' => $id))));
 	}	
 }
 ?>
