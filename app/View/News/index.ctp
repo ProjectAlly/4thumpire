@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<?php 
+	//CSS FOR NEWS TICKER
+	echo $this->Html->css('news-ticker.css');
+?>
 </head>
 	<div class="row-fluid">
 	  <div class="span3 well">

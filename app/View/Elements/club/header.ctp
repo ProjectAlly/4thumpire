@@ -24,7 +24,7 @@
 				</li>
 				<li class="divider-vertical"></li>
 				<li class="<?php if($cont == 'Policies'){ echo "active"; }?> ">
-					<?php echo $this->Html->link('Policies', array('controller' => 'Policies')); ?>
+					<?php echo $this->Html->link('Policies', array('controller' => 'Policy')); ?>
 				</li>
 				<li class="divider-vertical"></li>
 				<li class="<?php if($cont == 'Team'){ echo "active"; }?> ">
