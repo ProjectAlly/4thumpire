@@ -12,22 +12,21 @@
 		</div>
 		<div class="span4">
 			<div class="well">
-				<h4>News & Updates</h4>
-					<p>
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-					Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
-					parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
-					pretium quis, sem. Nulla consequat massa quis enim. 
-					</p>
+				<h4>News and Updates</h4>
+				<?php 
+					foreach ($clubNews as $news) {
+						echo "<b>".$news['ClubNews']['title']."</b><br/>"; 
+						echo $news['ClubNews']['description'];
+					}
+				?>				
 			</div>
 			<div class="well">
 				<h4>Sponsors</h4>
-					<p>
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-					Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
-					parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
-					pretium quis, sem. Nulla consequat massa quis enim. 
-					</p>
+				<?php
+					foreach ($clubSponsors as $clubSponsor) {
+						echo "<b>".$clubSponsor['ClubSponsor']['name']."</b><br/>";
+					}
+				?>
 			</div>
 		</div>
 	</div>
