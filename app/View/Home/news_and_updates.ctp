@@ -19,8 +19,8 @@
 			</ul>
 		</div>
 		<div class="span4 well">
-		<h4>News and Annoucement</h4>
-		<ul id="ticker2">
+			<h4>News and Annoucement</h4>
+			<ul id="ticker2">
 					<?php echo $this->element('news_ticker', array('temp' => $temp_club_updates, 'model' => 'ClubUpdate')); ?>
 					<?php echo $this->element('news_ticker', array('temp' => $temp_news_updates, 'model' => 'NewsAndUpdates')); ?>
 			</ul>	
