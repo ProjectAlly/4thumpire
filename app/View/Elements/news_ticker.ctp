@@ -1,4 +1,4 @@
-<?php
+	<?php
 	foreach ($temp as $new) {
 	?> 
 	<li style="list-style: none">
@@ -13,4 +13,5 @@
     </li>
 	<?php 
 	}
-	?> 
+	?>
+ 

@@ -2366,3 +2366,11 @@ e))
 #3 F:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2013-02-03 10:05:22 Error: [MissingActionException] Action HomeController::Club() could not be found.
+#0 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 F:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 10:12:57 Error: [MissingControllerException] Controller class ColtController could not be found.
+#0 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
