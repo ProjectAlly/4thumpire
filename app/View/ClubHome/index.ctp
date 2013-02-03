@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 </head>
+<body>
 	<div class="row-fluid">
 		<div class="span2 well">
 			<h4>Welcome Message</h4>
@@ -30,4 +31,5 @@
 			</div>
 		</div>
 	</div>
+</body>	
 </html>
