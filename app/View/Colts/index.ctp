@@ -12,19 +12,32 @@
 				<div class="tab-content span10">
 					<div id="tab1" class="tab-pane active">
 					    <h4>Colts</h4>
-						<?php print_r($coltInfo); ?>
+						<?php 
+							//print_r($coltInfo);
+							echo $coltInfo['Colt']['colt_info']; 
+						?>
 					</div>
 					<div id="tab2" class="tab-pane">
 					    <h4>Colts Chairman</h4>
-						<?php print_r($coltInfo); ?>
+						<?php 
+							//print_r($coltInfo); 
+							echo "<h5>".$coltInfo['Colt']['chairman']."</h5>";
+							echo $coltInfo['Colt']['chairman_info'];
+						?>
 					</div>
 					<div id="tab3" class="tab-pane">
 					     <h4>Age Group</h4>
-						<?php print_r($coltInfo); ?>
+						<?php 
+							//print_r($coltInfo); 
+							echo $coltInfo['Colt']['age_group'];
+						?>
 					</div>
 					<div id="tab4" class="tab-pane">
 					      <h4>Conduct</h4>
-						<?php print_r($coltInfo); ?>
+						<?php 
+							//print_r($coltInfo); 
+							echo $coltInfo['Colt']['colt_conduct'];
+						?>
 					</div>
 					<div id="tab5" class="tab-pane">
 					      <h4>CLub Welfare Officer</h4>

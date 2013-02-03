@@ -3,32 +3,32 @@
 <head>
 </head>
 	<div class="row-fluid">
-		<div class="span2 well">
-			<h4>Welcome Message</h4>
-					<?php echo $club_info['Club']['club_message']; ?>
-		</div>
-		<div class="span6 well">
-			<h4></h4>
-		</div>
-		<div class="span4">
-			<div class="well">
-				<h4>News & Updates</h4>
-					<p>
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-					Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
-					parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
-					pretium quis, sem. Nulla consequat massa quis enim. 
-					</p>
-			</div>
-			<div class="well">
-				<h4>Sponsors</h4>
-					<p>
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
-					Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis 
-					parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
-					pretium quis, sem. Nulla consequat massa quis enim. 
-					</p>
-			</div>
-		</div>
+	  <div class="span3 well">
+	  	<h5>Important Dates and Events</h5>
+	  	Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+	  	dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper 
+	  </div>
+	  <div class="span6 well">
+	  	<h5>Club News</h5>
+	  	Slider to be implemented.
+	  </div>
+	  <div class="span3 well">
+	  	<h5>Internationl Cricket News</h5>
+	  	Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+	  	dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+	  </div>
+	</div>
+	<div class="row-fluid">
+	  <div class="span3 well">
+	  	<h5>Google Ads</h5>
+	  	Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+	  	dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+	  </div>
+	  
+	  <div class="span3 offset6 well">
+	  	<h5>Other Club News</h5>
+	  	Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet 
+	  	dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+	  </div>
 	</div>
 </html>
