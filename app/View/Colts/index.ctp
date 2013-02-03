@@ -2,14 +2,14 @@
 <html lang="en">
 	<div class="row-fluid">
 			<div class="tabbable">
-				<ul class="nav nav-pills nav-stacked span2">
+				<ul class="nav nav-pills nav-stacked span3 well">
 					<li class="active"><a href="#tab1" data-toggle="tab">Colts</a></li>
 					<li><a href="#tab2" data-toggle="tab">The Colts Chairman</a></li>
 					<li><a href="#tab3" data-toggle="tab">Age Group</a></li>
 					<li><a href="#tab4" data-toggle="tab">Conduct</a></li>
 					<li><a href="#tab5" data-toggle="tab">Club Welfare Officer</a></li>
 				</ul>
-				<div class="tab-content span10">
+				<div class="tab-content span9 well">
 					<div id="tab1" class="tab-pane active">
 					    <h4>Colts</h4>
 						<?php 
