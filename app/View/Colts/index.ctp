@@ -14,34 +14,47 @@
 					    <h4>Colts</h4>
 						<?php 
 							//print_r($coltInfo);
-							echo $coltInfo['Colt']['colt_info']; 
+						foreach($coltInfo as $colt) {
+							echo "<b>".$colt['Colt']['colt_info']."</b><br/>"; 
+						}
 						?>
 					</div>
 					<div id="tab2" class="tab-pane">
 					    <h4>Colts Chairman</h4>
 						<?php 
-							//print_r($coltInfo); 
-							echo "<h5>".$coltInfo['Colt']['chairman']."</h5>";
-							echo $coltInfo['Colt']['chairman_info'];
+							//print_r($coltInfo);
+						foreach($coltInfo as $colt) { 
+							echo "<h5>".$colt['Colt']['chairman']."</h5><br/>";
+							echo $colt['Colt']['chairman_info']."<br/><br/>";
+						}
 						?>
 					</div>
 					<div id="tab3" class="tab-pane">
 					     <h4>Age Group</h4>
 						<?php 
+						foreach($coltInfo as $colt) {
 							//print_r($coltInfo); 
-							echo $coltInfo['Colt']['age_group'];
+							echo $colt['Colt']['age_group']."<br/>";
+						}
 						?>
 					</div>
 					<div id="tab4" class="tab-pane">
 					      <h4>Conduct</h4>
 						<?php 
+						foreach($coltInfo as $colt) {
 							//print_r($coltInfo); 
-							echo $coltInfo['Colt']['colt_conduct'];
+							echo $colt['Colt']['colt_conduct'];
+						}
 						?>
 					</div>
 					<div id="tab5" class="tab-pane">
 					      <h4>CLub Welfare Officer</h4>
-						<?php print_r($coltInfo); ?>
+						<?php 
+						foreach($welfareOfficerInfo as $off) {
+							echo "<h5>".$off['ClubWelfareOfficer']['name']."</h5><br/>";
+							echo $off['ClubWelfareOfficer']['information']."<br/><br/>";
+						}
+						?>
 					</div>
 				</div><!-- /.tab-content -->
 			</div><!-- /.tabbable -->
