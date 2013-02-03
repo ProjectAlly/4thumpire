@@ -20,6 +20,10 @@ class ClubHomeController extends AppController {
 		$this-> set('clubSponsors', $this->ClubSponsor->find('all' ,array('conditions' => 
 																array('ClubSponsor.club_id' => $id))));
 																
-	}	
+	}
+
+	public function admin_index() {
+		
+	}
 }
 ?>

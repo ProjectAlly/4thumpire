@@ -24,5 +24,9 @@ class HistoryController extends AppController {
 							array('Title.club_id' => $id))));
 							
 	}	
+	
+	public function admin_index() {
+		
+	}
 }
 ?>

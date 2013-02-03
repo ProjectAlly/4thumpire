@@ -28,5 +28,9 @@ class ClubController extends AppController {
 							array('Partner.club_id' => $id))));
 							
 	}	
+	
+	public function admin_index() {
+		
+	}
 }
 ?>

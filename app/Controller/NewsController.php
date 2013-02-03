@@ -22,6 +22,10 @@ class NewsController extends AppController {
 		$this-> set('otherClubInfo', $this->ClubUpdate->find('all' ,array('conditions' =>  
 							array('NOT' => array('ClubUpdate.club_id' => $id)))));
 							
-	}	
+	}
+
+	public function admin_index() {
+		
+	}
 }
 ?>
