@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Feb 03, 2013 at 09:59 AM
+-- Generation Time: Feb 03, 2013 at 11:03 AM
 -- Server version: 5.5.8
 -- PHP Version: 5.3.5
 
@@ -244,7 +244,7 @@ CREATE TABLE IF NOT EXISTS `colts` (
   `chairman` varchar(255) NOT NULL,
   `chairman_info` varchar(255) NOT NULL,
   `age_group` varchar(255) NOT NULL,
-  `colt_coduct` varchar(255) NOT NULL,
+  `colt_conduct` varchar(255) NOT NULL,
   `club_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
@@ -253,7 +253,7 @@ CREATE TABLE IF NOT EXISTS `colts` (
 -- Dumping data for table `colts`
 --
 
-INSERT INTO `colts` (`id`, `colt_info`, `chairman`, `chairman_info`, `age_group`, `colt_coduct`, `club_id`) VALUES
+INSERT INTO `colts` (`id`, `colt_info`, `chairman`, `chairman_info`, `age_group`, `colt_conduct`, `club_id`) VALUES
 (1, 'Training for under 19', 'Mr. Shane Watson', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '15-19', '', 1),
 (2, 'Training for league 2013', 'Mr. Shane Watson', 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', 'All age groups', '', 1);
 
