@@ -23,5 +23,9 @@ class GalleryController extends AppController {
 		$this->set('socialInfo', $this->Social->find('all' ,array('conditions' => 
 																		array('Social.club_id' => $id))));
 	}	
+	
+	public function admin_index() {
+		
+	}
 }
 ?>

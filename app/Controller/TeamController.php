@@ -14,6 +14,10 @@
 	}	
 		
 	public function index() {
-		}	
+	}
+
+	public function admin_index() {
+		
+	}
 }
 ?>

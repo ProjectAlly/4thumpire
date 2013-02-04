@@ -19,5 +19,9 @@ class ColtsController extends AppController {
 		$this-> set('welfareOfficerInfo', $this->ClubWelfareOfficer->find('all' ,array('conditions' => 
 							array('ClubWelfareOfficer.club_id' => $id))));
 	}	
+	
+	public function admin_index() {
+		
+	}
 }
 ?>
