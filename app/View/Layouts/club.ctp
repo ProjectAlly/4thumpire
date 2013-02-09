@@ -71,6 +71,12 @@
 			echo $this->Html->script('vendor/modernizr-2.6.2-respond-1.1.0.min');
 		?>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+<style>
+body {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+</style>
 
     </head>
     <body>
