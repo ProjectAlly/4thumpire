@@ -1,5 +1,6 @@
 <html>
-<?php $act = $this->request->params['action']; ?>
+<?php $act = $this->request->params['action']; 
+?>
 <style>
 	.pull-right{
 		float:right;

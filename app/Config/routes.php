@@ -30,9 +30,9 @@
 	
 	// CLUB SPECIFIC URLs	
 	
-	Router::connect('/:club/admin/', array('admin'=>'true','controller'=>'ClubHome', 'action'=>'index'), array('club' => '[a-z0-9_-]+'));
-	Router::connect('/:club/admin/:controller', array('admin'=>'true', 'action'=>'index'), array('club' => '[a-z0-9_-]+'));
-	Router::connect('/:club/', array('controller' => 'ClubHome', 'action' =>'index'), array('club' => '[a-z0-9_-]+'));
+	Router::connect('/:club/admin', array('prefix' =>'admin', 'admin'=>'true', 'controller'=>'Users', 'action'=>'index'), array('club' => '[a-z0-9_-]+'));
+	Router::connect('/:club/admin/:controller', array('prefix' =>'admin', 'admin'=>'true', 'action'=>'index'), array('club' => '[a-z0-9_-]+'));
+	Router::connect('/:club', array('controller' => 'ClubHome', 'action' =>'index'), array('club' => '[a-z0-9_-]+'));
 	Router::connect('/:club/:controller', array('action' =>'index'), array('club' => '[a-z0-9_-]+'));
 	
 

@@ -1,5 +1,6 @@
 <html>
-<?php $cont = $this->request->params['controller']; ?>
+<?php $cont = $this->request->params['controller']; 
+?>
 <div class="header">
 	<br/>
 	<h1><?php echo $club_info['Club']['club_name']; ?></h1>
@@ -12,7 +13,7 @@
 				</li>
 				<li class="divider-vertical"></li>
 				<li class="<?php if($cont == 'AboutUs'){ echo "active"; }?> ">
-					<?php echo $this->Html->link('About Us', array('controller' => 'AboutUs')); ?>
+					<?php echo $this->Html->link('About Us', array( 'controller' => 'AboutUs')); ?>
 				</li>
 				<li class="divider-vertical"></li>
 				<li class="<?php if($cont == 'Club'){ echo "active"; }?> ">
@@ -55,9 +56,6 @@
 					<?php echo $this->Html->link('Contact Us', array('controller' => 'ContactUs')); ?>
 				</li>
 				<li class="divider-vertical"></li>
-				<li>
-					<?php echo $this->element('login_btn'); ?>
-				</li>
 			</ul>
 		</div>
 	</div>
