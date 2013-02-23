@@ -10,9 +10,6 @@ class HistoryController extends AppController {
 		$this->set('club_info', $this->Club->find('first' ,array('conditions' => 
 														array('Club.website' => $this->request->params['club']))));
 		$this->clubId = $this->getClubId();
-	}
-	
-	public function index() {
 		$id = $this->clubId['Club']['id'];
 		$this-> set('heritageInfo', $this->Heritage->find('all' ,array('conditions' => 
 							array('Heritage.club_id' => $id))));
@@ -22,6 +19,9 @@ class HistoryController extends AppController {
 							array('OldPlayer.club_id' => $id))));
 		$this-> set('titleInfo', $this->Title->find('all' ,array('conditions' => 
 							array('Title.club_id' => $id))));
+	}
+	
+	public function index() {
 							
 	}	
 	
