@@ -35,7 +35,7 @@ class UsersController extends AppController{
 				$_SESSION['username'] = $this->data['User']['admin_username'];
 				$this->redirect(array('controller' => 'Dashboard',
 										'action' => 'index', 
-										'club' => 'rc',
+										'club' => $this->request->params['club'],
 										'admin' => true));
 			}
 	}

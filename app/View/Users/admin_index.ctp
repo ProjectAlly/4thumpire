@@ -9,7 +9,7 @@
 				  	<?php 
 					echo $this->Form->create('User',array('class' => 'form-horizontal',
 												'url' => array('controller' => 'Users',
-															   'action' => 'authenticate')));
+															   'action' => 'authenticate', 'club' => $this->request->params['club'])));
 					echo "<div class=\"control-group\">";
 						echo $this->Form->label('admin_username', 'Username', array('class' => 'control-label'));
 						echo $this->Form->input('admin_username',array(
