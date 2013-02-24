@@ -10,13 +10,12 @@ class PolicyController extends AppController {
 		$this -> set('club_info', $this->Club->find('first' ,array('conditions' => 
 														array('Club.website' => $this->request->params['club']))));	
 		$this->clubId = $this->getClubId();
-														
-	}
-	
-	public function index() {
 		$id = $this->clubId['Club']['id'];
 		$this-> set('policyInfo', $this->Policy->find('all' ,array('conditions' => 
 																array('Policy.club_id' => $id))));
+	}
+	
+	public function index() {
 																
 	}
 

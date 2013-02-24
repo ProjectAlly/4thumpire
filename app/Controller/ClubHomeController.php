@@ -25,5 +25,13 @@ class ClubHomeController extends AppController {
 	public function admin_index() {
 		
 	}
+	
+	public function admin_updateWelcomeMessage(){
+		$this->Club->updateAll(array('Club.club_message' => "'".$this->data['ClubHome']['welcome_message']."'"),
+							         array('Club.id' => $this->clubId['Club']['id']));
+		$this->redirect(array('controller' => 'ClubHome', 'action' => 'index', 'club' => $this->request->params['club']));	
+	}
+	
+	
 }
 ?>

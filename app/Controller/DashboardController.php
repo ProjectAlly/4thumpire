@@ -11,10 +11,22 @@ class DashboardController extends AppController{
 		$this->clubId = $this->getClubId();
 														
 	}
-	public function admin_index(){
+	public function index(){
 		if(isset($_SESSION['username'])){
-			
-		} else { $this->redirect(array('controller' => 'Users', 'action' => 'admin_index')); }
+			 $this->redirect(array('controller' => 'Dashboard', 
+										'action' => 'admin_index', 
+										'club' => $this->request->params['club'],
+										'admin' => true));
+			 
+		} else { $this->redirect(array('controller' => 'Users', 
+										'action' => 'admin_index', 
+										'club' => $this->request->params['club'],
+										'admin' => true)); 
+		}
+	}
+	
+	public function admin_index(){
+		
 	}
 	
 	
