@@ -10,7 +10,9 @@
 			<h4>Welcome Message</h4>
 				<?php 
 				echo $this->Form->create('ClubHome',array('url' => array('controller' => 'ClubHome',
-																		'action' => 'updateClubHome', 'admin' => 'true')));
+																		'action' => 'updateWelcomeMessage',
+																		'club' => $this->request->params['club'], 
+																		'admin' => 'true')));
 				echo "<dl class=\"dl-horizontal\">";
 					echo "<dt>";
 						echo $this->Form->label('welcome_message', 'Message');

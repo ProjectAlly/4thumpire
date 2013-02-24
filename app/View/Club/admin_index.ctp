@@ -6,8 +6,8 @@
 	<div class="row-fluid">
 		<div class="span12 well">
 			<div class="accordion" id="accordion2">
-				<div class="accordion-group">
 			  	<!-- GROUNDS -->
+				<div class="accordion-group">
 			    	<div class="accordion-heading">
 			      		<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
 						Grounds
@@ -296,7 +296,7 @@
 			</div>
 			<!-- COLLAPSIBLE MENU ENDS -->
 			<script type="text/javascript">
-			$(".collapse").collapse()
+			$(".collapse").collapse();
 			</script>
 		</div>
 	</div>
