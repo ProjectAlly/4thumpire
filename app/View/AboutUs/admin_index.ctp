@@ -10,7 +10,7 @@
 			<h4>About Us</h4>
 				<?php 
 				echo $this->Form->create('AboutUs',array('url' => array('controller' => 'AboutUs',
-																		'action' => 'updateAboutUs', 'admin' => 'true')));
+																		'action' => 'updateAboutUs', 'club' => 'rc', 'admin' => 'true')));
 				echo "<dl class=\"dl-horizontal\">";
 					echo "<dt>";
 						echo $this->Form->label('about_us_title', 'Title');

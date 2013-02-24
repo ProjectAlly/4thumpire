@@ -11,10 +11,13 @@ class UsersController extends AppController{
 		$this->clubId = $this->getClubId();
 														
 	}
-	public function admin_index(){
+	public function index(){
 	
 	}
-	public function index(){
+	public function admin_index(){
+
+	}
+	public function admin_authenticate(){
 			if(!empty($this->data)) {
 				$admin = $this->Club->find('first',
 											array('conditions' =>
@@ -30,10 +33,11 @@ class UsersController extends AppController{
 			if($admin == null){ echo "Incorrect username password"; }
 			else{
 				$_SESSION['username'] = $this->data['User']['admin_username'];
-				$this->redirect(array('controller' => 'Dashboard', 'action' => 'index','admin'=>true));
+				$this->redirect(array('controller' => 'Dashboard',
+										'action' => 'index', 
+										'club' => 'rc',
+										'admin' => true));
 			}
 	}
-	
-	
 }
 ?>
