@@ -10,9 +10,6 @@ class ClubController extends AppController {
 		$this->set('club_info', $this->Club->find('first' ,array('conditions' => 
 														array('Club.website' => $this->request->params['club']))));
 		$this->clubId = $this->getClubId();
-	}
-	
-	public function index() {
 		$id = $this->clubId['Club']['id'];
 		$this-> set('groundInfo', $this->Ground->find('all' ,array('conditions' => 
 							array('Ground.club_id' => $id))));
@@ -27,10 +24,24 @@ class ClubController extends AppController {
 		$this-> set('partnerInfo', $this->Partner->find('all' ,array('conditions' => 
 							array('Partner.club_id' => $id))));
 							
+	}
+	
+	public function index() {
 	}	
 	
 	public function admin_index() {
-		
 	}
+	
+	public function admin_edit_ground(){
+		$this->clubId = $this->getClubId();
+		$this->Ground->updateAll(array('Ground.name' => $this->data['Ground']['ground_name'],
+			    					 'Ground.info' => $this->data['Ground']['ground_info']),
+							         array('Ground.club_id' => $this->clubId));
+		echo "success";
+		//$this->redirect(array('controller' => 'Club', 'action' => 'index', 'admin' => 'true'));	
+	}
+	
+	
+	
 }
 ?>

@@ -30,15 +30,31 @@
 	
 	// CLUB SPECIFIC URLs	
 	
-	Router::connect('/:club/admin', array('prefix' =>'admin', 'admin'=>'true', 'controller'=>'Users', 'action'=>'index'), array('club' => '[a-z0-9_-]+'));
-	Router::connect('/:club/admin/:controller', array('prefix' =>'admin', 'admin'=>'true', 'action'=>'index'), array('club' => '[a-z0-9_-]+'));
-	Router::connect('/:club', array('controller' => 'ClubHome', 'action' =>'index'), array('club' => '[a-z0-9_-]+'));
-	Router::connect('/:club/:controller', array('action' =>'index'), array('club' => '[a-z0-9_-]+'));
+	Router::connect('/:club/admin/', 
+					array('prefix' =>'admin', 'admin'=>'true', 'controller'=>'Users'), 
+					array('club' => '[a-z0-9_-]+', 'pass' => array('club')));
+	
+	Router::connect('/:club/admin/:controller', 
+					array('prefix' =>'admin', 'admin'=>'true', 'action'=>'index'), 
+					array('club' => '[a-z0-9_-]+', 'pass' => array('club')));
+	
+	Router::connect('/:club/admin/:controller/:action', 
+					array('prefix' =>'admin', 'admin'=>'true'), 
+					array('club' => '[a-z0-9_-]+', 'pass' => array('club')));
+					
+	Router::connect('/:club', 
+					array('controller' => 'ClubHome', 'action' =>'index'), 
+					array('club' => '[a-z0-9_-]+', 'pass' => array('club')));
+					
+	Router::connect('/:club/:controller', 
+					array('action' =>'index'), 
+					array('club' => '[a-z0-9_-]+', 'pass' => array('club')));
 	
 
 	Router::connect('/', array('controller'=>'Home', 'action' => 'index'));
 	Router::connect('/:action', array('controller'=>'Home'));
 
+	Router::parseExtensions();
 	
 /**
  * ...and connect the rest of 'Pages' controller's urls.
@@ -56,3 +72,4 @@
  * the built-in default routes.
  */
 	require CAKE . 'Config' . DS . 'routes.php';
+?>
