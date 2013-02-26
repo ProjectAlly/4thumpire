@@ -25,7 +25,14 @@ class NewsController extends AppController {
 	}
 
 	public function admin_index() {
-		
+		$id = $this->clubId['Club']['id'];
+		$this-> set('internationalInfo', $this->InternationalNews->find('all'));
+		$this-> set('clubUpdateInfo', $this->ClubUpdate->find('all' ,array('conditions' => 
+							array('ClubUpdate.club_id' => $id))));
+		$this-> set('weekEventInfo', $this->WeeklyCricketEvent->find('all' ,array('conditions' => 
+							array('WeeklyCricketEvent.club_id' => $id))));
+		$this-> set('otherClubInfo', $this->ClubUpdate->find('all' ,array('conditions' =>  
+							array('NOT' => array('ClubUpdate.club_id' => $id)))));
 	}
 }
 ?>
