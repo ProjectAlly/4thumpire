@@ -16,8 +16,10 @@
 			    	<div id="collapseOne" class="accordion-body collapse in">
 			      		<div class="accordion-inner">
 							<?php 
-								echo $this->Form->create('Ground',array('url' => array('controller' => 'Club',
-																						'action' => 'editGround', 'admin' => 'true')));
+								echo $this->Form->create('Ground',array('url' => array('controller' => 'Club', 
+						   	 		              											'action' => 'editGround', 
+						   	 		              											'club' => $this->request->params['club'], 
+						   	 		              											'admin' => true)));
 								foreach($groundInfo as $ground){
 									echo "<dl class=\"dl-horizontal\">";
 										echo "<dt>";
@@ -39,7 +41,7 @@
 										echo "</dd>";
 									echo "</dl>";
 								}
-								echo $this->Form->submit('Save Changes',array('class' => 'btn'));
+								echo $this->Form->submit('Save Changes',array('class' => 'btn btn-primary'));
 								echo $this->Form->end();
 							?>
 					    </div>
@@ -60,7 +62,7 @@
 					    		<table class="table">
 							    	<thead>
 							        	<tr>
-							          		<th style="width: 150px;">Member Name</th>
+							          		<th>Member Name</th>
 							          		<th>Member Information</th>
 							          		<th></th>
 							          		<th></th>
@@ -76,14 +78,22 @@
 								      	 		echo "<td>";
 								      	 			echo $committee['Committee']['member_info'];
 								      	 		echo "</td>";
-								      	 		?>
-								      	 		<td>
-					      	 		              <a href=""><i class="icon-pencil">Edit</i></a>
-												</td>
-												<td>
-    									          <a href=""><i class="icon-remove">Remove</i></a>
-								      	 		</td>
-								      	 		<?php 	
+								      	 		echo "<td>";
+													echo $this->Html->link('Edit',array('controller' => 'Club', 
+						   	 		              											'action' => 'editCommittee', 
+						   	 		              											'club' => $this->request->params['club'], 
+						   	 		              											'id' => $committee['Committee']['id'],
+																							'admin' => true),
+																					array('class' => 'label label-info'));
+												echo "</td>";
+												echo "<td>";
+												  	echo $this->Html->link('Remove', array('controller' => 'Club', 
+						   	 		              											'action' => 'removeCommittee', 
+						   	 		              											'club' => $this->request->params['club'], 
+						   	 		              											'admin' => true, 
+												  											'id' => $committee['Committee']['id']),
+						   	 		              									array('class' => 'label label-info'));
+												echo "</td>";
 								      	 	echo "</tr>";
 								      	endforeach;
 								      	?>
@@ -91,7 +101,13 @@
 							    </table>
 							</div>
 
-							<button href="" class="btn btn-primary">Add New Committee Member</button>
+							<?php 
+						  	echo $this->Html->link('Add New Committee members', array('controller' => 'Club', 
+					   	 		              											'action' => 'addCommittee', 
+					   	 		              											'club' => $this->request->params['club'], 
+					   	 		              											'admin' => true),
+					   	 		              									array('class' => 'btn btn-primary'));
+							?>
 							
 						  <br/><br/>	
 					
@@ -129,14 +145,22 @@
 								      	 		echo "<td>";
 								      	 			echo $subscription['Subscription']['member_info'];
 								      	 		echo "</td>";	
-								      	 		?>
-								      	 		<td>
-					      	 		              <a href=""><i class="icon-pencil">Edit</i></a>
-												</td>
-												<td>
-    									          <a href=""><i class="icon-remove">Remove</i></a>
-								      	 		</td>
-								      	 		<?php 	
+								      	 		echo "<td>";
+													echo $this->Html->link('Edit',array('controller' => 'Club', 
+						   	 		              											'action' => 'editSubscription', 
+						   	 		              											'club' => $this->request->params['club'], 
+						   	 		              											'admin' => true,
+						   	 		              											'id' => $subscription['Subscription']['id']),
+																					array('class' => 'label label-info'));
+												echo "</td>";
+												echo "<td>";
+												  	echo $this->Html->link('Remove', array('controller' => 'Club', 
+						   	 		              											'action' => 'removeSubscription', 
+						   	 		              											'club' => $this->request->params['club'], 
+						   	 		              											'admin' => true, 
+												  											'id' => $subscription['Subscription']['id']),
+						   	 		              									array('class' => 'label label-info'));
+												echo "</td>";
 								      	 	echo "</tr>";
 								      	endforeach;
 								      	?>
@@ -144,7 +168,13 @@
 							    </table>
 							</div>
 
-							<button href="" class="btn btn-primary">Add New Subscriptions</button>
+							<?php 
+						  	echo $this->Html->link('Add New Subscription', array('controller' => 'Club', 
+				   	 		              											'action' => 'addSubscription', 
+				   	 		              											'club' => $this->request->params['club'], 
+				   	 		              											'admin' => true),
+				   	 		              									array('class' => 'btn btn-primary'));
+							?>
 							
 						  <br/><br/>	
 				  </div>
@@ -178,14 +208,22 @@
 								      	 		echo "<td>";
 								      	 			echo $scholarship['Scholarship']['information'];
 								      	 		echo "</td>";	
-								      	 		?>
-								      	 		<td>
-					      	 		              <a href=""><i class="icon-pencil">Edit</i></a>
-												</td>
-												<td>
-    									          <a href=""><i class="icon-remove">Remove</i></a>
-								      	 		</td>
-								      	 		<?php 	
+								      	 		echo "<td>";
+													echo $this->Html->link('Edit',array('controller' => 'Club', 
+						   	 		              											'action' => 'editScholarship', 
+						   	 		              											'club' => $this->request->params['club'], 
+						   	 		              											'admin' => true,
+						   	 		              											'id' => $scholarship['Scholarship']['id']),
+																					array('class' => 'label label-info'));
+												echo "</td>";
+												echo "<td>";
+												  	echo $this->Html->link('Remove', array('controller' => 'Club', 
+						   	 		              											'action' => 'removeScholarship', 
+						   	 		              											'club' => $this->request->params['club'], 
+						   	 		              											'admin' => true, 
+												  											'id' => $scholarship['Scholarship']['id']),
+						   	 		              									array('class' => 'label label-info'));
+												echo "</td>";
 								      	 	echo "</tr>";
 								      	endforeach;
 								      	?>
@@ -193,7 +231,13 @@
 							    </table>
 							</div>
 
-							<button href="" class="btn btn-primary">Add New Scholarships</button>
+							<?php 
+						  	echo $this->Html->link('Add New Scholarship', array('controller' => 'Club', 
+			   	 		              											'action' => 'addScholarship', 
+			   	 		              											'club' => $this->request->params['club'], 
+			   	 		              											'admin' => true),
+			   	 		              									array('class' => 'btn btn-primary'));
+							?>
 							
 						  <br/><br/>	
 			      </div>
@@ -227,14 +271,22 @@
 								      	 		echo "<td>";
 								      	 			echo $marks['Marks']['award_info'];
 								      	 		echo "</td>";	
-								      	 		?>
-								      	 		<td>
-					      	 		              <a href="<?php ?>"><i class="icon-pencil">Edit</i></a>
-												</td>
-												<td>
-    									          <a href=""><i class="icon-remove">Remove</i></a>
-								      	 		</td>
-								      	 		<?php 	
+								      	 		echo "<td>";
+													echo $this->Html->link('Edit',array('controller' => 'Club', 
+						   	 		              											'action' => 'editMark', 
+						   	 		              											'club' => $this->request->params['club'], 
+						   	 		              											'admin' => true,
+						   	 		              											'id' => $marks['Marks']['id']),
+																					array('class' => 'label label-info'));
+												echo "</td>";
+												echo "<td>";
+												  	echo $this->Html->link('Remove', array('controller' => 'Club', 
+						   	 		              											'action' => 'removeMark', 
+						   	 		              											'club' => $this->request->params['club'], 
+						   	 		              											'admin' => true, 
+												  											'id' => $marks['Marks']['id']),
+						   	 		              									array('class' => 'label label-info'));
+												echo "</td>";
 								      	 	echo "</tr>";
 								      	endforeach;
 								      	?>
@@ -242,7 +294,13 @@
 							    </table>
 							</div>
 
-							<button href="" class="btn btn-primary">Add New Marks</button>
+							<?php 
+						  	echo $this->Html->link('Add New Mark', array('controller' => 'Club', 
+   	 		              											'action' => 'addMark', 
+   	 		              											'club' => $this->request->params['club'], 
+   	 		              											'admin' => true),
+   	 		              									array('class' => 'btn btn-primary'));
+							?>
 							
 						  <br/><br/>	
 			      </div>
@@ -272,23 +330,35 @@
 								      	 		echo "<td>";
 								      	 			echo $partner['Partner']['name'];
 								      	 		echo "</td>";	
-								      	 		?>
-								      	 		<td>
-					      	 		              <a href=""><i class="icon-pencil">Edit</i></a>
-												</td>
-												<td>
-    									          <a href=""><i class="icon-remove">Remove</i></a>
-								      	 		</td>
-								      	 		<?php 	
+								      	 		echo "<td>";
+													echo $this->Html->link('Edit',array('controller' => 'Club', 
+						   	 		              											'action' => 'editPartner', 
+						   	 		              											'club' => $this->request->params['club'], 
+						   	 		              											'admin' => true,
+						   	 		              											'id' => $partner['Partner']['id']),
+																					array('class' => 'label label-info'));
+												echo "</td>";
+												echo "<td>";
+												  	echo $this->Html->link('Remove', array('controller' => 'Club', 
+						   	 		              											'action' => 'removePartner', 
+						   	 		              											'club' => $this->request->params['club'], 
+						   	 		              											'admin' => true, 
+												  											'id' => $partner['Partner']['id']),
+						   	 		              									array('class' => 'label label-info'));
+												echo "</td>";
 								      	 	echo "</tr>";
 								      	endforeach;
 								      	?>
 							      </tbody>
 							    </table>
 							</div>
-
-							<button href="" class="btn btn-primary">Add New Partners</button>
-							
+							<?php 
+						  	echo $this->Html->link('Add New Partner', array('controller' => 'Club', 
+		   	 		              											'action' => 'addPartner', 
+		   	 		              											'club' => $this->request->params['club'], 
+		   	 		              											'admin' => true),
+		   	 		              									array('class' => 'btn btn-primary'));
+							?>
 						  <br/><br/>	
 			      </div>
 			    </div>
