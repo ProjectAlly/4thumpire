@@ -41,6 +41,11 @@
 	Router::connect('/:club/admin/:controller/:action', 
 					array('prefix' =>'admin', 'admin'=>'true'), 
 					array('club' => '[a-z0-9_-]+', 'pass' => array('club')));
+
+	Router::connect('/:club/admin/:controller/:action/:id', 
+					array('prefix' =>'admin', 'admin'=>'true'), 
+					array('club' => '[a-z0-9_-]+', 'id'=>'[0-9]+', 'pass' => array('club', 'id')));
+					
 					
 	Router::connect('/:club', 
 					array('controller' => 'ClubHome', 'action' =>'index'), 
