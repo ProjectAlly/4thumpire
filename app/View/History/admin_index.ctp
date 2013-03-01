@@ -32,7 +32,7 @@
 					   	 		              											'club' => $this->request->params['club'], 
 					   	 		              											'admin' => true,
 					   	 		              											'id' => $heritage['Heritage']['id']),
-																				array('class' => 'label label-info'));
+																			 array('class' => 'label label-info'));
 											echo "</td>";
 											echo "<td>";
 											  	echo $this->Html->link('Remove', array('controller' => 'History', 
