@@ -29,10 +29,10 @@
 								array('controller' => 'Social', 'action'=>'index', 'club' => $this->request->params['club'])); ?></li>
 				
 				<li><?php echo $this->html->link('Colts Information',
-								array('controller' => 'Colt', 'action'=>'index', 'club' => $this->request->params['club'])); ?></li>
+								array('controller' => 'Colts', 'action'=>'index', 'club' => $this->request->params['club'])); ?></li>
 				
 				<li><?php echo $this->html->link('Club Sponsors',
-								array('controller' => 'Sponsor', 'action'=>'index', 'club' => $this->request->params['club'])); ?></li>
+								array('controller' => 'Sponsors', 'action'=>'index', 'club' => $this->request->params['club'])); ?></li>
 				
 				<li><?php echo $this->html->link('News and Updates',
 								array('controller' => 'News', 'action'=>'index', 'club' => $this->request->params['club'])); ?></li>

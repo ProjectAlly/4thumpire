@@ -31,14 +31,22 @@
 								      	 		echo "<td>";
 								      	 			echo $heritage['Heritage']['information'];
 								      	 		echo "</td>";	
-								      	 		?>
-								      	 		<td>
-					      	 		              <a href="<?php ?>"><i class="icon-pencil">Edit</i></a>
-												</td>
-												<td>
-    									          <a href=""><i class="icon-remove">Remove</i></a>
-								      	 		</td>
-								      	 		<?php 	
+								      	 		echo "<td>";
+													echo $this->Html->link('Edit',array('controller' => 'History', 
+						   	 		              											'action' => 'editHeritage', 
+						   	 		              											'club' => $this->request->params['club'], 
+						   	 		              											'admin' => true,
+						   	 		              											'id' => $heritage['Heritage']['id']),
+																					array('class' => 'label label-info'));
+												echo "</td>";
+												echo "<td>";
+												  	echo $this->Html->link('Remove', array('controller' => 'History', 
+						   	 		              											'action' => 'removeHeritage', 
+						   	 		              											'club' => $this->request->params['club'], 
+						   	 		              											'admin' => true, 
+												  											'id' => $heritage['Heritage']['id']),
+						   	 		              									array('class' => 'label label-info'));
+												echo "</td>";
 								      	 	echo "</tr>";
 								      	endforeach;
 								      	?>
@@ -46,7 +54,13 @@
 							    </table>
 							</div> <!-- /WELL -->
 		
-							<button href="" class="btn btn-primary">Add New Heritage</button>
+							<?php 
+						  	echo $this->Html->link('Add Heritage', array('controller' => 'History', 
+	   	 		              											'action' => 'addHeritage', 
+	   	 		              											'club' => $this->request->params['club'], 
+	   	 		              											'admin' => true),
+	   	 		              									array('class' => 'btn btn-primary'));
+							?>
 									
 							<br/><br/>	
 					    </div>
@@ -79,14 +93,22 @@
 								      	 		echo "<td>";
 								      	 			echo $honour['Honour']['name'];
 								      	 		echo "</td>";	
-								      	 		?>
-									      	 		<td>
-						      	 		              <a href=""><i class="icon-pencil">Edit</i></a>
-													</td>
-													<td>
-	    									          <a href=""><i class="icon-remove">Remove</i></a>
-									      	 		</td>
-									      	 		<?php 	
+								      	 		echo "<td>";
+													echo $this->Html->link('Edit',array('controller' => 'History', 
+						   	 		              											'action' => 'editHonour', 
+						   	 		              											'club' => $this->request->params['club'], 
+						   	 		              											'admin' => true,
+						   	 		              											'id' => $honour['Honour']['id']),
+																					array('class' => 'label label-info'));
+												echo "</td>";
+												echo "<td>";
+												  	echo $this->Html->link('Remove', array('controller' => 'History', 
+						   	 		              											'action' => 'removeHonour', 
+						   	 		              											'club' => $this->request->params['club'], 
+						   	 		              											'admin' => true, 
+												  											'id' => $honour['Honour']['id']),
+						   	 		              									array('class' => 'label label-info'));
+												echo "</td>";
 								      	 	echo "</tr>";
 								      	endforeach;
 								      	?>
@@ -94,7 +116,13 @@
 							    </table>
 							</div>
 	
-							<button href="" class="btn btn-primary">Add New Honours</button>
+							<?php 
+						  	echo $this->Html->link('Add Honour', array('controller' => 'History', 
+	   	 		              											'action' => 'addHonour', 
+	   	 		              											'club' => $this->request->params['club'], 
+	   	 		              											'admin' => true),
+	   	 		              									array('class' => 'btn btn-primary'));
+							?>
 							
 						  <br/><br/>	
 					
@@ -128,22 +156,36 @@
 									      	 		echo "<td>";
 									      	 			echo $oldPlayer['OldPlayer']['name'];
 									      	 		echo "</td>";	
-									      	 		?>
-									      	 		<td>
-						      	 		              <a href=""><i class="icon-pencil">Edit</i></a>
-													</td>
-													<td>
-	    									          <a href=""><i class="icon-remove">Remove</i></a>
-									      	 		</td>
-									      	 		<?php 	
-									      	 	echo "</tr>";
-									      	endforeach;
-									      	?>
+								      	 		echo "<td>";
+													echo $this->Html->link('Edit',array('controller' => 'History', 
+						   	 		              											'action' => 'editOldplayer', 
+						   	 		              											'club' => $this->request->params['club'], 
+						   	 		              											'admin' => true,
+						   	 		              											'id' => $oldPlayer['OldPlayer']['id']),
+																					array('class' => 'label label-info'));
+												echo "</td>";
+												echo "<td>";
+												  	echo $this->Html->link('Remove', array('controller' => 'History', 
+						   	 		              											'action' => 'removeOldplayer', 
+						   	 		              											'club' => $this->request->params['club'], 
+						   	 		              											'admin' => true, 
+												  											'id' => $oldPlayer['OldPlayer']['id']),
+						   	 		              									array('class' => 'label label-info'));
+												echo "</td>";
+								      	 	echo "</tr>";
+									     endforeach;
+									     ?>
 								      </tbody>
 								    </table>
 								</div>
 	
-								<button href="" class="btn btn-primary">Add Old Players</button>
+							<?php 
+						  	echo $this->Html->link('Add Old Player', array('controller' => 'History', 
+		   	 		              											'action' => 'addOldplayer', 
+		   	 		              											'club' => $this->request->params['club'], 
+		   	 		              											'admin' => true),
+		   	 		              									array('class' => 'btn btn-primary'));
+							?>
 								
 							  <br/><br/>	
 					  </div>
@@ -180,22 +222,36 @@
 									      	 		echo "<td>";
 									      	 			echo $title['Title']['info'];
 									      	 		echo "</td>";	
-									      	 		?>
-									      	 		<td>
-						      	 		              <a href=""><i class="icon-pencil">Edit</i></a>
-													</td>
-													<td>
-	    									          <a href=""><i class="icon-remove">Remove</i></a>
-									      	 		</td>
-									      	 		<?php 	
-									      	 	echo "</tr>";
-									      	endforeach;
-									      	?>
+								      	 		echo "<td>";
+													echo $this->Html->link('Edit',array('controller' => 'History', 
+						   	 		              											'action' => 'editTitle', 
+						   	 		              											'club' => $this->request->params['club'], 
+						   	 		              											'admin' => true,
+						   	 		              											'id' => $title['Title']['id']),
+																					array('class' => 'label label-info'));
+												echo "</td>";
+												echo "<td>";
+												  	echo $this->Html->link('Remove', array('controller' => 'History', 
+						   	 		              											'action' => 'removeTitle', 
+						   	 		              											'club' => $this->request->params['club'], 
+						   	 		              											'admin' => true, 
+												  											'id' => $title['Title']['id']),
+						   	 		              									array('class' => 'label label-info'));
+												echo "</td>";
+											echo "</tr>";
+									     endforeach;
+									     ?>
 								      </tbody>
 								    </table>
 								</div>
 	
-								<button href="" class="btn btn-primary">Add New Titles</button>
+							<?php 
+						  	echo $this->Html->link('Add Title', array('controller' => 'History', 
+   	 		              											'action' => 'addTitle', 
+   	 		              											'club' => $this->request->params['club'], 
+   	 		              											'admin' => true),
+   	 		              									array('class' => 'btn btn-primary'));
+							?>
 								
 							  <br/><br/>	
 				      	</div>

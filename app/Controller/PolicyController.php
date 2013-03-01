@@ -15,12 +15,37 @@ class PolicyController extends AppController {
 																array('Policy.club_id' => $id))));
 	}
 	
-	public function index() {
-																
-	}
+	public function index() { }
 
-	public function admin_index() {
-		
+	public function admin_index() { }
+	
+	public function admin_addPolicy(){
+		if($this->Policy->save($this->data)) {
+	 		$this->Policy->save(array("policy" => $this->request->data['Policy']['policy_info'],
+									  "club_id" => $this->clubId['Club']['id']));
+			$this->redirect(array('controller' => 'Policy',
+									'action' => 'index', 
+									'club' => $this->request->params['club'],
+									'admin' => true));
+		}   	
+	}
+	
+	public function admin_removePolicy(){
+		$id = $this->request->params['id'];
+		$this->Policy->delete($id);				
+		$this->redirect(array('controller' => 'Policy',
+								'action' => 'index', 
+								'club' => $this->request->params['club'],
+								'admin' => true));
+	}
+	
+	public function admin_editPolicy(){
+		$this->Policy->updateAll(array('Policy.policy' => "'".$this->data['Policy']['policy_info']."'"),  
+									array('Policy.id' => $this->request->params['id']));
+		$this->redirect(array('controller' => 'Policy',
+								'action' => 'index', 
+								'club' => $this->request->params['club'],
+								'admin' => true));
 	}
 }
 ?>
