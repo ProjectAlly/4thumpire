@@ -1,13 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
 <?php 
 	//JS FOR CAROUSEL
 	echo $this->Html->script('vendor/src/bootstrap-carousel.js');
 	//CSS FOR NEWS TICKER
 	echo $this->Html->css('news-ticker.css');
 ?>
-</head>
 	<div class="row-fluid">
 		<div class="span12">
 			<!--  
@@ -61,7 +57,6 @@
 				<!-- NEED TO IMPLEMENT CAROUSEL -->
 			</div>
 	</div>
-</html>
 <script>
 
 	function tick(){
