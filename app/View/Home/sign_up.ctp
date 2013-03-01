@@ -1,15 +1,9 @@
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
 	<?php
 		//BOOTSTRAP WIZARD CSS 
 		echo $this->Html->css('bootstrap.min.css');
 		echo $this->Html->css('bwizard/bwizard.min.css');
 		echo $this->Html->css('bwizard/bwizard.css');
 	?>
-</head>
-<body>
-
    	<div class="container">
 		<h4>Create 4<sup>th</sup> Umpire Account</h4>
 		<div id="wizard">
@@ -155,6 +149,5 @@
 	$("#wizard").bwizard();
 	$("#wizard").bwizard({ show: function (click, ui) {
 			
-		 } });</script>
-</body>
-</html>
+		 } });
+</script>

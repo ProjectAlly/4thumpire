@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-</head>
-<body>
 	<div class="row-fluid">
 		<div class="span12 well">
 			<h4>Add Subscribed Member</h4>
@@ -32,5 +27,3 @@
 				?>
 		</div>
 	</div>
-</body>	
-</html>

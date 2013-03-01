@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
 <?php 
 	//CSS FOR NEWS TICKER
 	echo $this->Html->css('news-ticker.css');
 ?>
-</head>
 	<div class="row-fluid">
 	  <div class="span3 well">
 	  	<h5>Important Dates and Events</h5>
@@ -62,8 +58,6 @@
 
 	  </div>
 	</div>
-</html>
-
 <script>
 	function tick(){
 		$('#ticker li:first').slideUp( function () { $(this).appendTo($('#ticker')).slideDown(); });
