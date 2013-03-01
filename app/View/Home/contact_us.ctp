@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
 	<div class="row-fluid">
 		<div class="span3">
 			<address>
@@ -56,5 +54,3 @@
 		
 		</div>
 	</div>
-
-</html>
