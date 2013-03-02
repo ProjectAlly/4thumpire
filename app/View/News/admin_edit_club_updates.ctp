@@ -13,7 +13,15 @@
                 echo "</dt>";
                 echo "<dd>";
                     echo $this->Form->input('title', array('label' => false,
-                                                          'value' => $oldPlayer['OldPlayer']['name']));
+                                                          'value' => $clubupdates['ClubUpdate']['title']));
+                echo "</dd>";
+                echo "<dt>";
+                    echo $this->Form->label('description', 'Description');
+                echo "</dt>";
+                echo "<dd>";
+                    echo $this->Form->input('description', array('label' => false,
+                                                                 'rows' => '10',
+                                                                 'value' => $clubupdates['ClubUpdate']['description']));
                 echo "</dd>";
             echo "</dl>";
             echo $this->Form->submit('Save Changes',array('class' => 'btn'));

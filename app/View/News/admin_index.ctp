@@ -15,6 +15,7 @@
 							    	<thead>
 							        	<tr>
 											<th>News Title</th>
+                                            <th>Description</th>
 											<th>Date</th>
 											<th>Edit</th>
 											<th>Delete</th>
@@ -26,6 +27,7 @@
 										?>
 										<tr>
 											<td><?php echo $internationalInfos['InternationalNews']['title']; ?></td>
+                                            <td><?php echo $internationalInfos['InternationalNews']['description']; ?></td>
 											<td><?php echo $internationalInfos['InternationalNews']['date']; ?></td>
 											<td>
 												<?php
@@ -56,7 +58,7 @@
 							</div> <!-- /WELL -->
 
                               <?php
-                              echo $this->Html->link('Add International News', array('controller' => 'History',
+                              echo $this->Html->link('Add International News', array('controller' => 'News',
                                                                                      'action' => 'addInternationalNews',
                                                                                      'club' => $this->request->params['club'],
                                                                                      'admin' => true),
@@ -83,7 +85,8 @@
 					    		<table class="table">
 							    	<thead>
 							        	<tr>
-							          		<th>News Title</th>
+							          		<th>Club Update Title</th>
+                                            <th>Description</th>
 											<th>Date</th>
 											<th>Edit</th>
 											<th>Delete</th>
@@ -95,6 +98,7 @@
 										?>
 										<tr>
 											<td><?php echo $clubUpdateInfos['ClubUpdate']['title']; ?></td>
+                                            <td><?php echo $clubUpdateInfos['ClubUpdate']['description']; ?></td>
 											<td><?php echo $clubUpdateInfos['ClubUpdate']['date']; ?></td>
 											<td>
                                                 <?php
@@ -109,7 +113,7 @@
 											<td>
                                                 <?php
                                                     echo $this->Html->link('Remove',array('controller' => 'News',
-                                                                                        'action' => 'editInternationalNews',
+                                                                                        'action' => 'removeClubUpdates',
                                                                                         'club' => $this->request->params['club'],
                                                                                         'admin' => true,
                                                                                         'id' => $clubUpdateInfos['ClubUpdate']['id']),
@@ -124,8 +128,8 @@
 							    </table>
 							</div>
                              <?php
-                             echo $this->Html->link('Add Club Updates', array('controller' => 'History',
-                                      'action' => 'addInternationalNews',
+                             echo $this->Html->link('Add Club Updates', array('controller' => 'News',
+                                      'action' => 'addClubUpdates',
                                       'club' => $this->request->params['club'],
                                       'admin' => true),
                                   array('class' => 'btn btn-primary'));
@@ -192,7 +196,7 @@
 								    </table>
 								</div>
                                 <?php
-                                    echo $this->Html->link('Add Weekly Cricket Event', array('controller' => 'History',
+                                    echo $this->Html->link('Add Weekly Cricket Event', array('controller' => 'News',
                                                                                             'action' => 'addWeeklyCricketNews',
                                                                                             'club' => $this->request->params['club'],
                                                                                             'admin' => true),
