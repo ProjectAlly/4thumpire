@@ -30,7 +30,7 @@
 	
 	// CLUB SPECIFIC URLs	
 	
-	Router::connect('/:club/admin/', 
+	Router::connect('/:club/admin',
 					array('prefix' =>'admin', 'admin'=>'true', 'controller'=>'Users'), 
 					array('club' => '[a-z0-9_-]+', 'pass' => array('club')));
 	

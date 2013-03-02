@@ -17,7 +17,9 @@ class PolicyController extends AppController {
 	
 	public function index() { }
 
-	public function admin_index() { }
+	public function admin_index() { 
+		if($this->isAdminLogged()){ }
+	}
 	
 	public function admin_addPolicy(){
 		if($this->Policy->save($this->data)) {

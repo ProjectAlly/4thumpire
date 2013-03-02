@@ -30,6 +30,7 @@ class ClubController extends AppController {
 	}	
 	
 	public function admin_index() {
+		if($this->isAdminLogged()){ }
 	}
 	
 	/* METHODS TO EDIT FEATURES */
@@ -55,7 +56,7 @@ class ClubController extends AppController {
 			$this->redirect(array('controller' => 'Club',
 									'action' => 'index',
 									'club' => $this->request->params['club'],
-									'admin' => true));
+									'admin' => true, '#' =>'collapseTwo'));
 		}
 	}
 

@@ -1,6 +1,4 @@
-<html>
-<?php $act = $this->request->params['action']; 
-?>
+<?php $act = $this->request->params['action']; ?>
 <style>
 	.pull-right{
 		float:right;
@@ -17,13 +15,13 @@
 			<?php echo $this->Html->link('Contact Us', array('controller' => 'Home', 'action' => 'contactUs')); ?>
 		</li>
 		<li class="<?php if($act == 'blog'){ echo "active"; }?> pull-right">
-			<?php echo $this->Html->link('Blog', array('controller' => 'Home', 'action' => 'blog')); ?>
+			<?php echo $this->Html->link('Blog', array('controller' => 'Home', 'action' => 'ourBlog')); ?>
 		</li>
 		<li class="<?php if($act == 'newsAndUpdates'){ echo "active"; }?> pull-right">
 			<?php echo $this->Html->link('News and Updates', array('controller' => 'Home', 'action' => 'newsAndUpdates')); ?>
 		</li>
 		<li class="<?php if($act == 'products'){ echo "active"; }?> pull-right">
-			<?php echo $this->Html->link('Products', array('controller' => 'Home', 'action' => 'products')); ?>
+			<?php echo $this->Html->link('Products', array('controller' => 'Home', 'action' => 'ourProducts')); ?>
 		</li>
 		<li class="<?php if($act == 'aboutUs'){ echo "active"; }?> pull-right">
 			<?php echo $this->Html->link('About Us', array('controller' => 'Home', 'action' => 'aboutUs')); ?>
@@ -34,4 +32,3 @@
 	</ul>
 	<hr>
 </div>
-</html>
