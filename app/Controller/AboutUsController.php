@@ -17,8 +17,9 @@ class AboutUsController extends AppController {
 	}	
 	
 	public function admin_index() {
-		
+		if($this->isAdminLogged()){ }		
 	}
+
 	public function admin_updateAboutUs(){
 		$this->Club->updateAll(array('Club.about_us_title' => "'".$this->data['AboutUs']['about_us_title']."'",
 			    					 'Club.about_us' => "'".$this->data['AboutUs']['about_us']."'"),

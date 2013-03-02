@@ -1,4 +1,4 @@
-	<div class="row-fluid">
+<div class="row-fluid">
 		<div class="span well">
         <h3>Administrator Login</h3>
 				  	<?php 
@@ -30,7 +30,7 @@
 				?>
 				<label class="checkbox">
 				<?php 
-				echo $this->Form->checkbox('Remember me',array('label' => false));
+				echo $this->Form->checkbox('remember_me',array('label' => false));
 					//echo " Remember me";	
 				echo "Remember Me </label>";
 					echo $this->Form->submit('Log me in',array('class' => 'btn'));
