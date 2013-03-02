@@ -23,7 +23,7 @@ class ClubHomeController extends AppController {
 	}
 
 	public function admin_index() {
-		
+		if($this->isAdminLogged()){ }
 	}
 	
 	public function admin_updateWelcomeMessage(){
