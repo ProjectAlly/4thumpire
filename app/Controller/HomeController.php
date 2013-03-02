@@ -65,16 +65,16 @@ class HomeController extends AppController {
 	public function aboutUs() {
 	}
 	
-	public function products() {
+	public function ourProducts() {
 	}
 	
-	public function members() {
+	public function ourMembers() {
 	}
 	
 	public function newsAndUpdates() {
 	}
 	
-	public function blog() {
+	public function ourBlog() {
 	}
 
 	public function contactUs() {

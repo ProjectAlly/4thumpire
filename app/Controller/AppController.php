@@ -21,6 +21,7 @@
  */
 
 App::uses('Controller', 'Controller');
+App::uses('CakeTime', 'Utility');					     	
 
 /**
  * Application Controller
@@ -33,11 +34,29 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 	//public $theme = 'TwitterBootstrap';
-	public $components = array('DebugKit.Toolbar');
-	var $helpers = array('Cache','Html','Session','Form','Combinator.Combinator');
+	public $components = array('DebugKit.Toolbar','Session');
+	var $helpers = array('Cache','Html','Session','Form','Combinator.Combinator', 'Time');
+	
+	public function beforeFilter(){
+
+	}
 	
 	function getClubId(){
 		return $this->Club->find('first' ,array('conditions' => 
 														array('Club.website' => $this->request->params['club'])));
+	}
+	
+	function isAdminLogged(){
+		if($this->Session->check('username')) {
+			return true;
+		}
+		else {
+			$this->Session->setFlash("Please Log in first..");
+			$this->redirect(array('controller'=>'Users', 
+								'action'=>'index', 
+								'admin'=>true, 
+								'club' => $this->request->params['club']));
+			return false;
+		} 
 	}
 }

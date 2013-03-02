@@ -2374,3 +2374,362 @@ e))
 2013-02-03 10:12:57 Error: [MissingControllerException] Controller class ColtController could not be found.
 #0 F:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-02-03 11:25:13 Error: [MissingActionException] Action HomeController::Club() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 11:25:31 Error: [MissingActionException] Action HomeController::History() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 11:25:46 Error: [MissingActionException] Action HomeController::Policies() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 11:25:52 Error: [MissingControllerException] Controller class PoliciesController could not be found.
+#0 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-03 11:26:10 Error: [MissingActionException] Action HomeController::Policies() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 11:26:16 Error: [MissingControllerException] Controller class PoliciesController could not be found.
+#0 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-03 11:26:19 Error: [MissingControllerException] Controller class PoliciesController could not be found.
+#0 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-03 11:27:57 Error: [MissingActionException] Action HomeController::Policies() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 11:28:00 Error: [MissingActionException] Action HomeController::Policies() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 11:28:05 Error: [MissingActionException] Action HomeController::Policy() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 11:28:22 Error: [MissingActionException] Action HomeController::Team() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 11:28:27 Error: [MissingControllerException] Controller class TeamController could not be found.
+#0 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-03 11:28:57 Error: [MissingActionException] Action HomeController::Social() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 11:29:17 Error: [MissingActionException] Action HomeController::Colts() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 11:29:32 Error: [MissingActionException] Action HomeController::Sponsors() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 11:29:42 Error: [MissingActionException] Action HomeController::News() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 11:31:00 Error: [MissingActionException] Action HomeController::Gallery() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 11:31:31 Error: [MissingTableException] Table contact_uses for model ContactUs was not found in datasource default.
+#0 C:\wamp\www\4thumpire\lib\Cake\Model\Model.php(3186): Model->setSource('contact_uses')
+#1 C:\wamp\www\4thumpire\lib\Cake\Model\Model.php(2637): Model->getDataSource()
+#2 C:\wamp\www\4thumpire\app\Controller\ContactUsController.php(11): Model->find('first', Array)
+#3 [internal function]: ContactUsController->beforeFilter(Object(CakeEvent))
+#4 C:\wamp\www\4thumpire\lib\Cake\Event\CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 C:\wamp\www\4thumpire\lib\Cake\Controller\Controller.php(669): CakeEventManager->dispatch(Object(CakeEvent))
+#6 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(183): Controller->startupProcess()
+#7 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ContactUsController), Object(CakeRequest), Object(CakeResponse))
+#8 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-02-03 11:32:02 Error: [MissingActionException] Action HomeController::Colts() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 11:33:50 Error: [MissingActionException] Action HomeController::News() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 11:37:25 Error: [MissingActionException] Action HomeController::Team() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 11:37:33 Error: [MissingControllerException] Controller class TeamController could not be found.
+#0 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-03 11:42:39 Error: [MissingActionException] Action HomeController::Team() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 11:43:36 Error: [MissingActionException] Action HomeController::Social() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 11:44:47 Error: [MissingActionException] Action HomeController::Team() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 11:44:51 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\4thumpire\app\Controller\TeamController.php, line 6]
+2013-02-03 11:44:51 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 C:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\4th...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\4th...', 6, Array)
+#2 C:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\4th...', 6, Array)
+#3 C:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-03 11:47:28 Error: [MissingTableException] Table contact_uses for model ContactUs was not found in datasource default.
+#0 C:\wamp\www\4thumpire\lib\Cake\Model\Model.php(3186): Model->setSource('contact_uses')
+#1 C:\wamp\www\4thumpire\lib\Cake\Model\Model.php(2637): Model->getDataSource()
+#2 C:\wamp\www\4thumpire\app\Controller\ContactUsController.php(11): Model->find('first', Array)
+#3 [internal function]: ContactUsController->beforeFilter(Object(CakeEvent))
+#4 C:\wamp\www\4thumpire\lib\Cake\Event\CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#5 C:\wamp\www\4thumpire\lib\Cake\Controller\Controller.php(669): CakeEventManager->dispatch(Object(CakeEvent))
+#6 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(183): Controller->startupProcess()
+#7 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(ContactUsController), Object(CakeRequest), Object(CakeResponse))
+#8 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#9 {main}
+2013-02-03 11:48:08 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\4thumpire\app\Controller\ContactUsController.php, line 10]
+2013-02-03 11:48:08 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 C:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\4th...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\4th...', 10, Array)
+#2 C:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\4th...', 10, Array)
+#3 C:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-03 11:48:28 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\4thumpire\app\Controller\ContactUsController.php, line 10]
+2013-02-03 11:48:28 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 C:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\4th...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\4th...', 10, Array)
+#2 C:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\4th...', 10, Array)
+#3 C:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-03 11:48:31 Error: Fatal Error (1): Call to a member function find() on a non-object in [C:\wamp\www\4thumpire\app\Controller\ContactUsController.php, line 10]
+2013-02-03 11:48:32 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 C:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\wamp\www\4th...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\wamp\www\4th...', 10, Array)
+#2 C:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\wamp\www\4th...', 10, Array)
+#3 C:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-03 11:56:00 Error: [MissingActionException] Action HomeController::ClubHome() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 17:06:07 Error: [MissingControllerException] Controller class AdminController could not be found.
+#0 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-02-03 17:08:10 Error: [MissingActionException] Action AboutUsController::admin_index() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(AboutUsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-03 17:24:11 Error: [MissingViewException] View file "C:\wamp\www\4thumpire\app\View\AboutUs\admin_index.ctp" is missing.
+#0 C:\wamp\www\4thumpire\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 C:\wamp\www\4thumpire\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(AboutUsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-02-07 16:10:54 Error: [MissingActionException] Action HomeController::rc() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-11 09:51:09 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Club.admin_username' in 'where clause'
+#0 C:\wamp\www\4thumpire\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\4thumpire\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `Club`.`...', Array)
+#2 C:\wamp\www\4thumpire\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `Club`.`...', Array, Array)
+#3 C:\wamp\www\4thumpire\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `Club`.`...', false)
+#4 C:\wamp\www\4thumpire\lib\Cake\Model\Model.php(2637): DboSource->read(Object(Club), Array)
+#5 C:\wamp\www\4thumpire\app\Controller\UsersController.php(27): Model->find('first', Array)
+#6 [internal function]: UsersController->index()
+#7 C:\wamp\www\4thumpire\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#8 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-02-11 10:45:23 Error: [MissingActionException] Action HomeController::Sponsors() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-15 19:29:30 Error: [MissingViewException] View file "C:\wamp\www\4thumpire\app\View\Users\index.ctp" is missing.
+#0 C:\wamp\www\4thumpire\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 C:\wamp\www\4thumpire\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-02-15 19:29:58 Error: [MissingViewException] View file "C:\wamp\www\4thumpire\app\View\Users\index.ctp" is missing.
+#0 C:\wamp\www\4thumpire\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 C:\wamp\www\4thumpire\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-02-15 19:30:05 Error: [MissingViewException] View file "C:\wamp\www\4thumpire\app\View\Users\index.ctp" is missing.
+#0 C:\wamp\www\4thumpire\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 C:\wamp\www\4thumpire\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-02-15 19:31:14 Error: [MissingViewException] View file "C:\wamp\www\4thumpire\app\View\Users\index.ctp" is missing.
+#0 C:\wamp\www\4thumpire\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 C:\wamp\www\4thumpire\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-02-15 19:31:45 Error: [MissingActionException] Action DashboardController::index() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(DashboardController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-15 19:58:02 Error: [MissingActionException] Action HomeController::News() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-02-26 17:44:04 Error: Fatal Error (4): syntax error, unexpected T_ENDFOREACH in [C:\wamp\www\4thumpire\app\View\News\admin_index.ctp, line 41]
+2013-02-26 17:44:04 Error: [FatalErrorException] syntax error, unexpected T_ENDFOREACH
+#0 C:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\4th...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\4th...', 41, Array)
+#2 C:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\4th...', 41, Array)
+#3 C:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-01 08:59:54 Error: [MissingActionException] Action HomeController::PhpStorm-3452b5a5-6e5c-4aab-a0c3-43382cf4546a() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-01 17:52:51 Error: [MissingControllerException] Controller class EditClubUpdatesController could not be found.
+#0 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-03-01 17:53:03 Error: [MissingViewException] View file "C:\wamp\www\4thumpire\app\View\News\admin_edit_club_updates.ctp" is missing.
+#0 C:\wamp\www\4thumpire\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 C:\wamp\www\4thumpire\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-01 19:26:59 Error: Fatal Error (4): syntax error, unexpected ')', expecting T_PAAMAYIM_NEKUDOTAYIM in [C:\wamp\www\4thumpire\app\View\Colts\admin_index.ctp, line 24]
+2013-03-01 19:26:59 Error: [FatalErrorException] syntax error, unexpected ')', expecting T_PAAMAYIM_NEKUDOTAYIM
+#0 C:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\4th...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\4th...', 24, Array)
+#2 C:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\4th...', 24, Array)
+#3 C:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-01 19:29:32 Error: Fatal Error (4): syntax error, unexpected ')', expecting T_PAAMAYIM_NEKUDOTAYIM in [C:\wamp\www\4thumpire\app\View\Colts\admin_index.ctp, line 24]
+2013-03-01 19:29:32 Error: [FatalErrorException] syntax error, unexpected ')', expecting T_PAAMAYIM_NEKUDOTAYIM
+#0 C:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\4th...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\4th...', 24, Array)
+#2 C:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\4th...', 24, Array)
+#3 C:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-01 19:31:40 Error: Fatal Error (4): syntax error, unexpected '[', expecting ',' or ';' in [C:\wamp\www\4thumpire\app\View\Colts\admin_index.ctp, line 27]
+2013-03-01 19:31:40 Error: [FatalErrorException] syntax error, unexpected '[', expecting ',' or ';'
+#0 C:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\4th...', 27)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\4th...', 27, Array)
+#2 C:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\4th...', 27, Array)
+#3 C:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-02 15:56:46 Error: [MissingViewException] View file "C:\wamp\www\4thumpire\app\View\News\admin_edit_international_news.ctp" is missing.
+#0 C:\wamp\www\4thumpire\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 C:\wamp\www\4thumpire\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-02 17:18:41 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'WeeklyCricketEvent.id' in 'where clause'
+#0 C:\wamp\www\4thumpire\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\4thumpire\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('SELECT `ClubUpd...', Array)
+#2 C:\wamp\www\4thumpire\lib\Cake\Model\Datasource\DboSource.php(669): DboSource->execute('SELECT `ClubUpd...', Array, Array)
+#3 C:\wamp\www\4thumpire\lib\Cake\Model\Datasource\DboSource.php(1080): DboSource->fetchAll('SELECT `ClubUpd...', false)
+#4 C:\wamp\www\4thumpire\lib\Cake\Model\Model.php(2637): DboSource->read(Object(ClubUpdate), Array)
+#5 C:\wamp\www\4thumpire\app\Controller\NewsController.php(64): Model->find('first', Array)
+#6 [internal function]: NewsController->admin_editWeeklyCricketNews('rc', '1')
+#7 C:\wamp\www\4thumpire\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#8 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-03-02 17:19:48 Error: [MissingViewException] View file "C:\wamp\www\4thumpire\app\View\News\admin_edit_weekly_cricket_news.ctp" is missing.
+#0 C:\wamp\www\4thumpire\lib\Cake\View\View.php(473): View->_getViewFileName(NULL)
+#1 C:\wamp\www\4thumpire\lib\Cake\Controller\Controller.php(956): View->render(NULL, NULL)
+#2 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(193): Controller->render()
+#3 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-02 17:34:19 Error: Fatal Error (4): syntax error, unexpected '[', expecting ')' in [C:\wamp\www\4thumpire\app\View\News\admin_edit_weekly_cricket_news.ctp, line 16]
+2013-03-02 17:34:19 Error: [FatalErrorException] syntax error, unexpected '[', expecting ')'
+#0 C:\wamp\www\4thumpire\lib\Cake\Error\ErrorHandler.php(161): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\wamp\www\4th...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\wamp\www\4th...', 16, Array)
+#2 C:\wamp\www\4thumpire\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\wamp\www\4th...', 16, Array)
+#3 C:\wamp\www\4thumpire\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-02 17:59:34 Error: [MissingActionException] Action HistoryController::admin_addInternationalNews() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HistoryController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-02 18:00:05 Error: [MissingActionException] Action HistoryController::admin_addInternationalNews() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HistoryController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-02 18:34:47 Error: [MissingActionException] Action HistoryController::admin_addInternationalNews() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HistoryController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-02 18:35:21 Error: [MissingActionException] Action HistoryController::admin_addInternationalNews() could not be found.
+#0 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(HistoryController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-03-02 18:47:16 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'event_name' cannot be null
+#0 C:\wamp\www\4thumpire\lib\Cake\Model\Datasource\DboSource.php(459): PDOStatement->execute(Array)
+#1 C:\wamp\www\4thumpire\lib\Cake\Model\Datasource\DboSource.php(425): DboSource->_execute('INSERT INTO `fo...', Array)
+#2 C:\wamp\www\4thumpire\lib\Cake\Model\Datasource\DboSource.php(1007): DboSource->execute('INSERT INTO `fo...')
+#3 C:\wamp\www\4thumpire\lib\Cake\Model\Model.php(1734): DboSource->create(Object(WeeklyCricketEvent), Array, Array)
+#4 C:\wamp\www\4thumpire\app\Controller\NewsController.php(134): Model->save(Array)
+#5 [internal function]: NewsController->admin_addWeeklyCricketNews('rc')
+#6 C:\wamp\www\4thumpire\lib\Cake\Controller\Controller.php(485): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#7 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 C:\wamp\www\4thumpire\lib\Cake\Routing\Dispatcher.php(161): Dispatcher->_invoke(Object(NewsController), Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\4thumpire\app\webroot\index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}

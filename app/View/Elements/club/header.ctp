@@ -1,11 +1,23 @@
-<html>
-<?php $cont = $this->request->params['controller']; 
-?>
+<?php $cont = $this->request->params['controller']; ?>
 <div class="header">
-	<br/>
-	<h1><?php echo $club_info['Club']['club_name']; ?></h1>
-	<br/>
-	<div class="navbar">
+    <br/>
+	<?php
+        $session = $this->Session->read('username');
+        if(!empty($session)){
+            echo $this->Html->link('Logout', array('controller' => 'Users',
+                                                    'action' => 'logout',
+                                                    'club' => $this->request->params['club'],
+                                                    'admin' => true), array('role' => 'button', 'class' => 'btn'));
+	    }
+	    else {
+            echo $this->Html->link('Login', array('controller' => 'Users',
+                                                    'action' => 'index',
+                                                    'club' => $this->request->params['club'],
+                                                    'admin' => true), array('role' => 'button', 'class' => 'btn'));
+	    }
+    ?>
+	<br/><h1><?php echo $club_info['Club']['club_name']; ?></h1><br/>
+    <div class="navbar">
 		<div class="navbar-inner">
 			<ul class="nav pull-right">
 				<li class="<?php if($cont == 'ClubHome'){ echo "active"; }?> ">
@@ -60,4 +72,3 @@
 		</div>
 	</div>
 </div>
-</html>

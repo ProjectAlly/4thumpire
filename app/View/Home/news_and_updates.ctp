@@ -1,10 +1,7 @@
-<!DOCTYPE html>
 <?php 
 	//CSS FOR NEWS TICKER
 	echo $this->Html->css('news-ticker.css');
 ?>
-
-<html lang="en">
 	<div class="row-fluid">
 		<div class="span4 well">
 			<h4>International News</h4>

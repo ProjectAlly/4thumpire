@@ -26,7 +26,7 @@ class SocialController extends AppController {
 	}
 
 	public function admin_index() {
-		
+		if($this->isAdminLogged()){ }		
 	}
 }
 ?>
