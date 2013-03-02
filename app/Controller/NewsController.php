@@ -11,7 +11,8 @@ class NewsController extends AppController {
 														array('Club.website' => $this->request->params['club']))));	
 		$this->clubId = $this->getClubId();
 		$id = $this->clubId['Club']['id'];
-		$this-> set('internationalInfo', $this->InternationalNews->find('all'));
+		$this-> set('internationalInfo', $this->InternationalNews->find('all', array('conditions' => 
+							array('InternationalNews.club_id' => $id))));
 		$this-> set('clubUpdateInfo', $this->ClubUpdate->find('all' ,array('conditions' => 
 							array('ClubUpdate.club_id' => $id))));
 		$this-> set('weekEventInfo', $this->WeeklyCricketEvent->find('all' ,array('conditions' => 
@@ -107,7 +108,8 @@ class NewsController extends AppController {
     public function admin_addInternationalNews() {
         if($this->InternationalNews->save($this->data)){
             $this->InternationalNews->save(array('title' => $this->data['AddInternationalNews']['title'],
-                                                 'description' => $this->data['AddInternationalNews']['description']));
+                                                 'description' => $this->data['AddInternationalNews']['description'],
+            									 'club_id' => $this->clubId['Club']['id']));
             $this->redirect(array('controller' => 'news',
                 'action' => 'index',
                 'club' => $this->request->params['club'],
