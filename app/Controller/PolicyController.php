@@ -24,6 +24,7 @@ class PolicyController extends AppController {
 	public function admin_addPolicy(){
 		if($this->Policy->save($this->data)) {
 	 		$this->Policy->save(array("policy" => $this->request->data['Policy']['policy_info'],
+	 								  "date_created" => CakeTime::format('Y-m-d H:i:s', time()),
 									  "club_id" => $this->clubId['Club']['id']));
 			$this->redirect(array('controller' => 'Policy',
 									'action' => 'index', 
@@ -42,12 +43,17 @@ class PolicyController extends AppController {
 	}
 	
 	public function admin_editPolicy(){
-		$this->Policy->updateAll(array('Policy.policy' => "'".$this->data['Policy']['policy_info']."'"),  
-									array('Policy.id' => $this->request->params['id']));
-		$this->redirect(array('controller' => 'Policy',
-								'action' => 'index', 
-								'club' => $this->request->params['club'],
-								'admin' => true));
+		$id = $this->request->params['id'];
+		$this-> set('policy', $this->Policy->find('first', array('conditions' => array('Policy.id' => $id))));
+		if($this->data){
+			$this->Policy->updateAll(array('Policy.policy' => "'".$this->data['Policy']['policy_info']."'",
+										   'Policy.date_modified' =>"'".CakeTime::format('Y-m-d H:i:s', time())."'"),  
+										array('Policy.id' => $this->request->params['id']));
+			$this->redirect(array('controller' => 'Policy',
+									'action' => 'index', 
+									'club' => $this->request->params['club'],
+									'admin' => true));
+		}	
 	}
 }
 ?>

@@ -37,7 +37,8 @@ class NewsController extends AppController {
         $this-> set('internationalnews', $this->InternationalNews->find('first', array('conditions' => array('InternationalNews.id' => $id))));
         if($this->data){
             $this->InternationalNews->updateAll(array('InternationalNews.title' => "'".$this->data['EditInternationalNews']['title']."'",
-                                                      'InternationalNews.description' => "'".$this->data['EditInternationalNews']['description']."'"),
+                                                      'InternationalNews.description' => "'".$this->data['EditInternationalNews']['description']."'",
+            										  'InternationalNews.date_modified' =>"'".CakeTime::format('Y-m-d H:i:s', time())."'"),
                                                 array('InternationalNews.id' => $id));
             $this->redirect(array('controller' => 'news',
                 'action' => 'index',
@@ -51,7 +52,8 @@ class NewsController extends AppController {
         $this-> set('clubupdates', $this->ClubUpdate->find('first', array('conditions' => array('ClubUpdate.id' => $id))));
         if($this->data){
             $this->ClubUpdate->updateAll(array('ClubUpdate.title' => "'".$this->data['EditClubUpdates']['title']."'",
-                                               'ClubUpdate.description' => "'".$this->data['EditClubUpdates']['description']."'"),
+                                               'ClubUpdate.description' => "'".$this->data['EditClubUpdates']['description']."'",
+            								   'ClubUpdate.date_modified' =>"'".CakeTime::format('Y-m-d H:i:s', time())."'"),
                                          array('ClubUpdate.id' => $id));
             $this->redirect(array('controller' => 'news',
                 'action' => 'index',
@@ -65,7 +67,8 @@ class NewsController extends AppController {
         $this-> set('weeklycricketnews', $this->WeeklyCricketEvent->find('first', array('conditions' => array('WeeklyCricketEvent.id' => $id))));
         if($this->data){
             $this->WeeklyCricketEvent->updateAll(array('WeeklyCricketEvent.event_name' => "'".$this->data['EditWeeklyCricketNews']['eventname']."'",
-                                                       'WeeklyCricketEvent.details' => "'".$this->data['EditWeeklyCricketNews']['details']."'"),
+                                                       'WeeklyCricketEvent.details' => "'".$this->data['EditWeeklyCricketNews']['details']."'",
+            										   'WeeklyCricketEvent.date_modified' =>"'".CakeTime::format('Y-m-d H:i:s', time())."'"),
                 array('WeeklyCricketEvent.id' => $id));
             $this->redirect(array('controller' => 'news',
                 'action' => 'index',
@@ -109,6 +112,7 @@ class NewsController extends AppController {
         if($this->InternationalNews->save($this->data)){
             $this->InternationalNews->save(array('title' => $this->data['AddInternationalNews']['title'],
                                                  'description' => $this->data['AddInternationalNews']['description'],
+	 											 'date_created' => CakeTime::format('Y-m-d H:i:s', time()),
             									 'club_id' => $this->clubId['Club']['id']));
             $this->redirect(array('controller' => 'news',
                 'action' => 'index',
@@ -121,6 +125,7 @@ class NewsController extends AppController {
         if($this->ClubUpdate->save($this->data)){
             $this->ClubUpdate->save(array('title' => $this->data['AddClubUpdates']['title'],
                                                  'description' => $this->data['AddClubUpdates']['description'],
+	 											 'date_created' => CakeTime::format('Y-m-d H:i:s', time()),
                                                  'club_id' => $this->clubId['Club']['id']));
             $this->redirect(array('controller' => 'news',
                 'action' => 'index',
@@ -133,6 +138,7 @@ class NewsController extends AppController {
         if($this->WeeklyCricketEvent->save($this->data)){
             $this->WeeklyCricketEvent->save(array('event_name' => $this->data['AddWeeklyCricketNews']['eventname'],
                                                   'details' => $this->data['AddWeeklyCricketNews']['details'],
+	 											  'date_created' => CakeTime::format('Y-m-d H:i:s', time()),
                                                   'club_id' => $this->clubId['Club']['id']));
             $this->redirect(array('controller' => 'news',
                                   'action' => 'index',
