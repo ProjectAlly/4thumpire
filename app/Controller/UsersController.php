@@ -10,8 +10,7 @@ class UsersController extends AppController{
 		$this->layout = 'club';
 		$this -> set('club_info', $this->Club->find('first' ,array('conditions' => 
 														array('Club.website' => $this->request->params['club']))));	
-		
-														$this->clubId = $this->getClubId();
+		$this->clubId = $this->getClubId();
 	}
 	public function index(){
 	
@@ -32,7 +31,7 @@ class UsersController extends AppController{
 																array(
 										      				  	  	'Authenticate.user_name' => $this->data['User']['admin_username'],
 																	'Authenticate.password' => $this->data['User']['admin_password'],
-																	'Authenticate.website_url' => $this->request->params['club']
+																	'Authenticate.club_id' => $this->clubId['Club']['id']
 																)
 									     			 )
 									     	));
@@ -60,7 +59,7 @@ class UsersController extends AppController{
 	}
     public function admin_logout() {
 		$this->Authenticate->updateAll(array('Authenticate.last_logged_in' =>"'".CakeTime::format('Y-m-d H:i:s', time())."'"),
-									   array('Authenticate.website_url' => $this->request->params['club']));
+									   array('Authenticate.club_id' => $this->clubId['Club']['id']));
     	$this->Session->destroy();
     }
 }

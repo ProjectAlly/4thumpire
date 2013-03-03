@@ -60,8 +60,6 @@
                                                       'admin' => true),
                                                 array('class' => 'btn btn-primary'));
             ?>
-
-
             <br/><br/>
         </div>
     </div>
@@ -271,7 +269,7 @@
 <div class="accordion-group">
     <div class="accordion-heading">
         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">
-            CLub Welfare Officer
+            Club Welfare Officer
         </a>
     </div>
     <div id="collapseFive" class="accordion-body collapse">
