@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 02, 2013 at 06:20 PM
+-- Generation Time: Mar 02, 2013 at 07:51 PM
 -- Server version: 5.5.8
 -- PHP Version: 5.3.5
 
@@ -172,22 +172,21 @@ INSERT INTO `club_sponsors` (`id`, `name`, `info`, `club_id`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `club_updates` (
-  `id` int(10) NOT NULL,
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
   `description` varchar(255) NOT NULL,
   `date` date NOT NULL,
-  `club_id` int(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `club_id` int(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `club_updates`
 --
 
 INSERT INTO `club_updates` (`id`, `title`, `description`, `date`, `club_id`) VALUES
-(1, 'Sample club updates 1', '', '2013-01-09', 1),
-(2, 'Sample club updates 2', '', '2013-01-22', 1),
-(3, 'Sample club updates 3', '', '2013-01-31', 2),
-(4, 'Sample club updates 4', '', '2013-01-31', 2);
+(1, 'Sample', 'Club update 1 ', '0000-00-00', 2),
+(2, 'Sample 2', 'Club Update 2', '0000-00-00', 1);
 
 -- --------------------------------------------------------
 
@@ -356,19 +355,21 @@ INSERT INTO `honours` (`id`, `name`, `club_id`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `international_news` (
-  `id` int(10) NOT NULL,
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
   `description` varchar(255) NOT NULL,
-  `date` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `date` date NOT NULL,
+  `club_id` int(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
 -- Dumping data for table `international_news`
 --
 
-INSERT INTO `international_news` (`id`, `title`, `description`, `date`) VALUES
-(1, 'Sample international news for testing 1', '', '2001-03-28'),
-(2, 'Sample international news for testing 2', '', '2013-01-01');
+INSERT INTO `international_news` (`id`, `title`, `description`, `date`, `club_id`) VALUES
+(1, 'Sample news 1', 'international news', '0000-00-00', 1),
+(2, 'sample news 2', '', '0000-00-00', 2);
 
 -- --------------------------------------------------------
 
@@ -669,7 +670,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`id`, `user_name`, `password`, `website_url`, `role`, `last_logged_in`) VALUES
 (1, 'username', 'password', 'kkr', 1, '2013-03-02 17:53:50'),
-(2, 'royal', 'royalroyal', 'rc', 1, '2013-03-02 18:16:58');
+(2, 'royal', 'royalroyal', 'rc', 1, '2013-03-02 19:46:29');
 
 -- --------------------------------------------------------
 
