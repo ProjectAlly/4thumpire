@@ -37,7 +37,8 @@ class ClubController extends AppController {
 	
 	public function admin_editGround(){
 		$this->Ground->updateAll(array('Ground.name' => "'".$this->data['Ground']['ground_name']."'",
-			    					 'Ground.info' => "'".$this->data['Ground']['ground_info']."'"),
+			    					   'Ground.info' => "'".$this->data['Ground']['ground_info']."'",
+									   'Ground.date_modified' =>"'".CakeTime::format('Y-m-d H:i:s', time())."'"),
 							     array('Ground.club_id' => $this->clubId['Club']['id']));
 		$this->redirect(array('controller' => 'Club',
 								'action' => 'index',
@@ -51,8 +52,9 @@ class ClubController extends AppController {
 																		array('Committee.id' => $id))));
 		if($this->data){
 			$this->Committee->updateAll(array('Committee.member_name' => "'".$this->data['EditCommittee']['name']."'",
-				    						 'Committee.member_info' => "'".$this->data['EditCommittee']['info']."'"),
-								     array('Committee.id' => $id));
+				    						  'Committee.member_info' => "'".$this->data['EditCommittee']['info']."'",
+								     		  'Committee.date_modified' =>"'".CakeTime::format('Y-m-d H:i:s', time())."'"),
+										array('Committee.id' => $id));
 			$this->redirect(array('controller' => 'Club',
 									'action' => 'index',
 									'club' => $this->request->params['club'],
@@ -66,7 +68,8 @@ class ClubController extends AppController {
 																		array('Subscription.id' => $id))));
 		if($this->data){
 			$this->Subscription->updateAll(array('Subscription.member_name' => "'".$this->data['EditSubscription']['name']."'",
-				    						 'Subscription.member_info' => "'".$this->data['EditSubscription']['info']."'"),
+				    						     'Subscription.member_info' => "'".$this->data['EditSubscription']['info']."'",  
+												 'Subscription.date_modified' =>"'".CakeTime::format('Y-m-d H:i:s', time())."'" ),
 								     array('Subscription.id' => $id));
 			$this->redirect(array('controller' => 'Club',
 									'action' => 'index',
@@ -80,8 +83,9 @@ class ClubController extends AppController {
 																		array('Scholarship.id' => $id))));
 		if($this->data){
 			$this->Scholarship->updateAll(array('Scholarship.name' => "'".$this->data['EditScholarship']['name']."'",
-				    						    'Scholarship.information' => "'".$this->data['EditScholarship']['info']."'"),
-								   		  array('Scholarship.id' => $id));
+				    						    'Scholarship.information' => "'".$this->data['EditScholarship']['info']."'",
+								   		 	    'Scholarship.date_modified' =>"'".CakeTime::format('Y-m-d H:i:s', time())."'"),
+										  array('Scholarship.id' => $id));
 			$this->redirect(array('controller' => 'Club',
 									'action' => 'index',
 									'club' => $this->request->params['club'],
@@ -94,7 +98,8 @@ class ClubController extends AppController {
 																		array('Marks.id' => $id))));
 		if($this->data){
 			$this->Marks->updateAll(array('Marks.award_name' => "'".$this->data['EditMarks']['name']."'",
-				    						 'Marks.award_info' => "'".$this->data['EditMarks']['info']."'"),
+				    						 'Marks.award_info' => "'".$this->data['EditMarks']['info']."'",   
+											 'Marks.date_modified' =>"'".CakeTime::format('Y-m-d H:i:s', time())."'"),
 								     array('Marks.id' => $id));
 			$this->redirect(array('controller' => 'Club',
 									'action' => 'index',
@@ -107,7 +112,8 @@ class ClubController extends AppController {
 		$this-> set('partner', $this->Partner->find('first', array('conditions' => 
 																		array('Partner.id' => $id))));
 		if($this->data){
-			$this->Partner->updateAll(array('Partner.name' => "'".$this->data['EditPartner']['name']."'"),
+			$this->Partner->updateAll(array('Partner.name' => "'".$this->data['EditPartner']['name']."'",
+											'Partner.date_modified' =>"'".CakeTime::format('Y-m-d H:i:s', time())."'"),
 								    	 array('Partner.id' => $id));
 			$this->redirect(array('controller' => 'Club',
 									'action' => 'index',
@@ -121,7 +127,8 @@ class ClubController extends AppController {
 	public function admin_addCommittee(){
 		if($this->Committee->save($this->data)) {
 	 		$this->Committee->save(array("member_name" => $this->data['AddCommittee']['name'],
-	 									 "member_info" => $this->data['AddCommittee']['info'],	
+	 									 "member_info" => $this->data['AddCommittee']['info'],
+	 									 "date_created" =>"'".CakeTime::format('Y-m-d H:i:s', time())."'",	
 									  	 "club_id" => $this->clubId['Club']['id']));
 			$this->redirect(array('controller' => 'Club',
 									'action' => 'index', 
@@ -132,7 +139,8 @@ class ClubController extends AppController {
 	public function admin_addSubscription(){
 		if($this->Subscription->save($this->data)) {
 	 		$this->Subscription->save(array("member_name" => $this->data['AddSubscription']['name'],
-	 									 "member_info" => $this->data['AddSubscription']['info'],	
+	 									 "member_info" => $this->data['AddSubscription']['info'],
+	 									 "date_created" =>"'".CakeTime::format('Y-m-d H:i:s', time())."'",	
 									  	 "club_id" => $this->clubId['Club']['id']));
 			$this->redirect(array('controller' => 'Club',
 									'action' => 'index', 
@@ -143,7 +151,8 @@ class ClubController extends AppController {
 	public function admin_addScholarship(){
 		if($this->Scholarship->save($this->data)) {
 	 		$this->Scholarship->save(array("name" => $this->data['AddScholarship']['name'],
-	 									 "information" => $this->data['AddScholarship']['info'],	
+	 									 "information" => $this->data['AddScholarship']['info'],
+	 									 "date_created" => CakeTime::format('Y-m-d H:i:s', time()),	
 									  	 "club_id" => $this->clubId['Club']['id']));
 			$this->redirect(array('controller' => 'Club',
 									'action' => 'index', 
@@ -154,7 +163,8 @@ class ClubController extends AppController {
 	public function admin_addMark(){
 		if($this->Marks->save($this->data)) {
 	 		$this->Marks->save(array("award_name" => $this->data['AddMark']['name'],
-	 									 "award_info" => $this->data['AddMark']['info'],	
+	 									 "award_info" => $this->data['AddMark']['info'],
+	 									 "date_created" => CakeTime::format('Y-m-d H:i:s', time()),	
 									  	 "club_id" => $this->clubId['Club']['id']));
 	 		$this->redirect(array('controller' => 'Club',
 									'action' => 'index', 
@@ -164,7 +174,8 @@ class ClubController extends AppController {
 	}
 	public function admin_addPartner(){
 		if($this->Partner->save($this->data)) {
-	 		$this->Partner->save(array("name" => $this->data['AddPartner']['name'],	
+	 		$this->Partner->save(array("name" => $this->data['AddPartner']['name'],
+	 									 "date_created" => CakeTime::format('Y-m-d H:i:s', time()),	
 									  	 "club_id" => $this->clubId['Club']['id']));
 			$this->redirect(array('controller' => 'Club',
 									'action' => 'index', 

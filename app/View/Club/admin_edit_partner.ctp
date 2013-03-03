@@ -1,6 +1,6 @@
 <div class="row-fluid">
 	<div class="span12 well">
-		<h4>Edit Subscribed Member</h4>
+		<h4>Edit Partner</h4>
 			<?php 
 			echo $this->Form->create('EditPartner',array('url' => array('controller' => 'Club',
 																	'action' => 'editPartner', 
