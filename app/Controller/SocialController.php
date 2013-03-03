@@ -37,7 +37,8 @@ class SocialController extends AppController {
 		if($this->data){
 			$this->Social->updateAll(array('Social.name' => "'".$this->data['EditSocial']['name']."'",
 										'Social.date' => "'".$this->data['EditSocial']['date']."'",
-										'Social.information' => "'".$this->data['EditSocial']['info']."'"),
+										'Social.information' => "'".$this->data['EditSocial']['info']."'", 
+										'Social.date_modified' =>"'".CakeTime::format('Y-m-d H:i:s', time())."'"),
 								     array('Social.id' => $id));
 			$this->redirect(array('controller' => 'Social',
 									'action' => 'index',
@@ -50,7 +51,8 @@ class SocialController extends AppController {
 		$this-> set('tour', $this->Tour->find('first', array('conditions' => array('Tour.id' => $id))));
 		if($this->data){
 			$this->Tour->updateAll(array('Tour.information' => "'".$this->data['EditTour']['info']."'",
-										'Tour.date' => "'".$this->data['EditTour']['date']."'"),
+										'Tour.date' => "'".$this->data['EditTour']['date']."'",
+										'Tour.date_modified' =>"'".CakeTime::format('Y-m-d H:i:s', time())."'"),
 								     array('Tour.id' => $id));
 			$this->redirect(array('controller' => 'Social',
 									'action' => 'index',
@@ -64,7 +66,8 @@ class SocialController extends AppController {
 		if($this->data){
 			$this->WeeklyCricketEvent->updateAll(array('WeeklyCricketEvent.event_name' => "'".$this->data['EditWeeklyevent']['name']."'",
 													   'WeeklyCricketEvent.details' => "'".$this->data['EditWeeklyevent']['info']."'", 
-													   'WeeklyCricketEvent.date' => "'".$this->data['EditWeeklyevent']['date']."'"),
+													   'WeeklyCricketEvent.date' => "'".$this->data['EditWeeklyevent']['date']."'",
+													   'WeeklyCricketEvent.date_modified' =>"'".CakeTime::format('Y-m-d H:i:s', time())."'"),
 								   			     array('WeeklyCricketEvent.id' => $id));
 			$this->redirect(array('controller' => 'Social',
 									'action' => 'index',
@@ -78,7 +81,8 @@ class SocialController extends AppController {
 		if($this->data){
 			$this->Award->updateAll(array('Award.name' => "'".$this->data['EditAwardeve']['name']."'",
 										  'Award.info' => "'".$this->data['EditAwardeve']['info']."'",
-										  'Award.date' => "'".$this->data['EditAwardeve']['date']."'"),
+										  'Award.date' => "'".$this->data['EditAwardeve']['date']."'",
+										  'Award.date_modified' =>"'".CakeTime::format('Y-m-d H:i:s', time())."'"),
 								    	 array('Award.id' => $id));
 			$this->redirect(array('controller' => 'Social',
 									'action' => 'index',
@@ -92,9 +96,10 @@ class SocialController extends AppController {
 	public function admin_addSocial(){
 		if($this->Social->save($this->data)) {
 	 		$this->Social->save(array("name" => $this->data['AddSocial']['name'],
-	 								"information" => $this->data['AddSocial']['info'],
-	 								"date" => $this->data['AddSocial']['date'],	
-									  	 "club_id" => $this->clubId['Club']['id']));
+	 								  "information" => $this->data['AddSocial']['info'],
+	 								  "date" => $this->data['AddSocial']['date'],
+	 								  "date_created" =>"'".CakeTime::format('Y-m-d H:i:s', time())."'",	
+									  "club_id" => $this->clubId['Club']['id']));
 			$this->redirect(array('controller' => 'Social',
 									'action' => 'index', 
 									'club' => $this->request->params['club'],
@@ -104,7 +109,8 @@ class SocialController extends AppController {
 	public function admin_addTour(){
 		if($this->Tour->save($this->data)) {
 	 		$this->Tour->save(array("information" => $this->data['AddTour']['info'],
-	 								"date" => $this->data['AddTour']['date'],	
+	 								"date" => $this->data['AddTour']['date'],
+	 								"date_created" =>"'".CakeTime::format('Y-m-d H:i:s', time())."'",	
 									"club_id" => $this->clubId['Club']['id']));
 			$this->redirect(array('controller' => 'Social',
 									'action' => 'index', 
@@ -117,6 +123,7 @@ class SocialController extends AppController {
 	 		$this->WeeklyCricketEvent->save(array("event_name" => $this->data['AddWeeklyevent']['name'],
 	 											  "details" => $this->data['AddWeeklyevent']['details'], 
 	 											  "date" => $this->data['AddWeeklyevent']['date'],
+	 											  "date_created" =>"'".CakeTime::format('Y-m-d H:i:s', time())."'",
 	 											  "club_id" => $this->clubId['Club']['id']));
 	 		$this->redirect(array('controller' => 'Social',
 									'action' => 'index', 
@@ -129,6 +136,7 @@ class SocialController extends AppController {
 	 		$this->Award->save(array("name" => $this->data['AddAwardeve']['name'],
 	 								 "info" => $this->data['AddAwardeve']['info'],
 	 								 "date" => $this->data['AddAwardeve']['date'],
+	 								 "date_created" =>"'".CakeTime::format('Y-m-d H:i:s', time())."'",
 	 								 "club_id" => $this->clubId['Club']['id']));
 			$this->redirect(array('controller' => 'Social',
 									'action' => 'index', 
