@@ -28,7 +28,7 @@
                         <td>
                             <?php
                             echo $this->Html->link('Edit',array('controller' => 'Colts',
-                                                                'action' => 'editCotls',
+                                                                'action' => 'editColts',
                                                                 'club' => $this->request->params['club'],
                                                                 'admin' => true,
                                                                 'id' => $coltInfos['Colt']['id']),
@@ -38,7 +38,7 @@
                         <td>
                             <?php
                             echo $this->Html->link('Remove',array('controller' => 'Colts',
-                                                                  'action' => 'removeCotls',
+                                                                  'action' => 'removeColts',
                                                                   'club' => $this->request->params['club'],
                                                                   'admin' => true,
                                                                   'id' => $coltInfos['Colt']['id']),
@@ -55,7 +55,7 @@
 
             <?php
             echo $this->Html->link('Add Colts', array('controller' => 'Colts',
-                                                      'action' => 'addCotls',
+                                                      'action' => 'addColts',
                                                       'club' => $this->request->params['club'],
                                                       'admin' => true),
                                                 array('class' => 'btn btn-primary'));
@@ -95,7 +95,7 @@
                         <td>
                             <?php
                             echo $this->Html->link('Edit',array('controller' => 'Colts',
-                                    'action' => 'editChairmaninfo',
+                                    'action' => 'editChairmanInfo',
                                     'club' => $this->request->params['club'],
                                     'admin' => true,
                                     'id' => $coltInfos['Colt']['id']),
@@ -105,7 +105,7 @@
                         <td>
                             <?php
                             echo $this->Html->link('Remove',array('controller' => 'Colts',
-                                    'action' => 'removeChairmaninfo',
+                                    'action' => 'removeChairmanInfo',
                                     'club' => $this->request->params['club'],
                                     'admin' => true,
                                     'id' => $coltInfos['Colt']['id']),
@@ -121,7 +121,7 @@
             </div>
             <?php
             echo $this->Html->link('Add Chairman', array('controller' => 'Colts',
-                    'action' => 'addChairmaninfo',
+                    'action' => 'addChairmanInfo',
                     'club' => $this->request->params['club'],
                     'admin' => true),
                 array('class' => 'btn btn-primary'));
@@ -161,7 +161,7 @@
                         <td>
                             <?php
                             echo $this->Html->link('Edit',array('controller' => 'Colts',
-                                    'action' => 'editagegroup',
+                                    'action' => 'editAgeGroup',
                                     'club' => $this->request->params['club'],
                                     'admin' => true,
                                     'id' => $coltInfos['Colt']['id']),
@@ -171,7 +171,7 @@
                         <td>
                             <?php
                             echo $this->Html->link('Remove',array('controller' => 'Colts',
-                                    'action' => 'removeagegroup',
+                                    'action' => 'removeAgeGroup',
                                     'club' => $this->request->params['club'],
                                     'admin' => true,
                                     'id' => $coltInfos['Colt']['id']),
@@ -187,7 +187,7 @@
             </div>
             <?php
             echo $this->Html->link('Add Age Group', array('controller' => 'Colts',
-                    'action' => 'addagegroup',
+                    'action' => 'addAgeGroup',
                     'club' => $this->request->params['club'],
                     'admin' => true),
                 array('class' => 'btn btn-primary'));
