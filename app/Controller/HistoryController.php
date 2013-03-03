@@ -36,7 +36,7 @@ class HistoryController extends AppController {
 		$this-> set('heritage', $this->Heritage->find('first', array('conditions' => array('Heritage.id' => $id))));
 		if($this->data){
 			$this->Heritage->updateAll(array('Heritage.information' => "'".$this->data['EditHeritage']['info']."'"),
-								     array('Heritage.id' => $id));
+								       array('Heritage.id' => $id));
 			$this->redirect(array('controller' => 'History',
 									'action' => 'index',
 									'club' => $this->request->params['club'],
@@ -60,7 +60,7 @@ class HistoryController extends AppController {
 		$this-> set('oldPlayer', $this->OldPlayer->find('first', array('conditions' => array('OldPlayer.id' => $id))));
 		if($this->data){
 			$this->OldPlayer->updateAll(array('OldPlayer.name' => "'".$this->data['EditOldPlayer']['name']."'"),
-								     array('OldPlayer.id' => $id));
+								        array('OldPlayer.id' => $id));
 			$this->redirect(array('controller' => 'History',
 									'action' => 'index',
 									'club' => $this->request->params['club'],
@@ -73,7 +73,7 @@ class HistoryController extends AppController {
 		if($this->data){
 			$this->Title->updateAll(array('Title.name' => "'".$this->data['EditTitle']['name']."'",
 										  'Title.info' => "'".$this->data['EditTitle']['info']."'"),
-								    	 array('Title.id' => $id));
+								    array('Title.id' => $id));
 			$this->redirect(array('controller' => 'History',
 									'action' => 'index',
 									'club' => $this->request->params['club'],
@@ -86,7 +86,7 @@ class HistoryController extends AppController {
 	public function admin_addHeritage(){
 		if($this->Heritage->save($this->data)) {
 	 		$this->Heritage->save(array("information" => $this->data['AddHeritage']['info'],	
-									  	 "club_id" => $this->clubId['Club']['id']));
+									  	"club_id" => $this->clubId['Club']['id']));
 			$this->redirect(array('controller' => 'History',
 									'action' => 'index', 
 									'club' => $this->request->params['club'],
@@ -96,7 +96,7 @@ class HistoryController extends AppController {
 	public function admin_addHonour(){
 		if($this->Honour->save($this->data)) {
 	 		$this->Honour->save(array("name" => $this->data['AddHonour']['name'],	
-									  	 "club_id" => $this->clubId['Club']['id']));
+									  "club_id" => $this->clubId['Club']['id']));
 			$this->redirect(array('controller' => 'History',
 									'action' => 'index', 
 									'club' => $this->request->params['club'],
