@@ -1,20 +1,16 @@
 <?php 
-	//JS FOR CAROUSEL
-	echo $this->Html->script('vendor/src/bootstrap-carousel.js');
 	//CSS FOR NEWS TICKER
 	echo $this->Html->css('news-ticker.css');
 ?>
 	<div class="row-fluid">
 		<div class="span12">
-			<!--  
-			<div id="myCarousel" class="carousel slide">-->
+			<div id="myCarousel" class="carousel slide">
 			  <!-- Carousel items -->
-			  <!--  
 			  <div class="carousel-inner">
 			    <div class="active item"><img alt="xyz" src="img/india.jpg"></div>
 			    <div class="item"><img alt="xyz" src="img/aus.jpg"></div>
 			    <div class="item"><img alt="xyz" src="img/west.jpg"></div>
-			  </div>-->
+			  </div>
 			  <!-- Carousel nav -->
 			  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
 			  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
@@ -23,14 +19,7 @@
 			<!-- CAROUSEL ENDS -->	
 
 		</div>
-		<script type="text/javascript">
-		
-			//INTIALIZING SCRIPT FOR CAROUSEL
-			
-			$(document).ready(function(){
-			    $('.carousel').carousel();
-			  });
-		</script>
+	
 	</div>
 
 	<div class="row-fluid">
