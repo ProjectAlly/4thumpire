@@ -35,8 +35,9 @@ class HistoryController extends AppController {
 		$id = $this->request->params['id'];
 		$this-> set('heritage', $this->Heritage->find('first', array('conditions' => array('Heritage.id' => $id))));
 		if($this->data){
-			$this->Heritage->updateAll(array('Heritage.information' => "'".$this->data['EditHeritage']['info']."'"),
-								     array('Heritage.id' => $id));
+			$this->Heritage->updateAll(array('Heritage.information' => "'".$this->data['EditHeritage']['info']."'",
+											 'Heritage.date_modified' =>"'".CakeTime::format('Y-m-d H:i:s', time())."'"),
+								       array('Heritage.id' => $id));
 			$this->redirect(array('controller' => 'History',
 									'action' => 'index',
 									'club' => $this->request->params['club'],
@@ -47,7 +48,8 @@ class HistoryController extends AppController {
 		$id = $this->request->params['id'];
 		$this-> set('honour', $this->Honour->find('first', array('conditions' => array('Honour.id' => $id))));
 		if($this->data){
-			$this->Honour->updateAll(array('Honour.name' => "'".$this->data['EditHonour']['name']."'"),
+			$this->Honour->updateAll(array('Honour.name' => "'".$this->data['EditHonour']['name']."'",
+										   'Honour.date_modified' =>"'".CakeTime::format('Y-m-d H:i:s', time())."'"),
 								     array('Honour.id' => $id));
 			$this->redirect(array('controller' => 'History',
 									'action' => 'index',
@@ -59,8 +61,9 @@ class HistoryController extends AppController {
 		$id = $this->request->params['id'];
 		$this-> set('oldPlayer', $this->OldPlayer->find('first', array('conditions' => array('OldPlayer.id' => $id))));
 		if($this->data){
-			$this->OldPlayer->updateAll(array('OldPlayer.name' => "'".$this->data['EditOldPlayer']['name']."'"),
-								     array('OldPlayer.id' => $id));
+			$this->OldPlayer->updateAll(array('OldPlayer.name' => "'".$this->data['EditOldPlayer']['name']."'",
+			 								  'OldPlayer.date_modified' =>"'".CakeTime::format('Y-m-d H:i:s', time())."'"),
+								        array('OldPlayer.id' => $id));
 			$this->redirect(array('controller' => 'History',
 									'action' => 'index',
 									'club' => $this->request->params['club'],
@@ -72,8 +75,9 @@ class HistoryController extends AppController {
 		$this-> set('title', $this->Title->find('first', array('conditions' => array('Title.id' => $id))));
 		if($this->data){
 			$this->Title->updateAll(array('Title.name' => "'".$this->data['EditTitle']['name']."'",
-										  'Title.info' => "'".$this->data['EditTitle']['info']."'"),
-								    	 array('Title.id' => $id));
+										  'Title.info' => "'".$this->data['EditTitle']['info']."'",
+										  'Title.date_modified' =>"'".CakeTime::format('Y-m-d H:i:s', time())."'"),
+								    array('Title.id' => $id));
 			$this->redirect(array('controller' => 'History',
 									'action' => 'index',
 									'club' => $this->request->params['club'],
@@ -85,8 +89,9 @@ class HistoryController extends AppController {
 	
 	public function admin_addHeritage(){
 		if($this->Heritage->save($this->data)) {
-	 		$this->Heritage->save(array("information" => $this->data['AddHeritage']['info'],	
-									  	 "club_id" => $this->clubId['Club']['id']));
+	 		$this->Heritage->save(array("information" => $this->data['AddHeritage']['info'],
+	 									"date_created" => CakeTime::format('Y-m-d H:i:s', time()),	
+									  	"club_id" => $this->clubId['Club']['id']));
 			$this->redirect(array('controller' => 'History',
 									'action' => 'index', 
 									'club' => $this->request->params['club'],
@@ -95,8 +100,9 @@ class HistoryController extends AppController {
 	}
 	public function admin_addHonour(){
 		if($this->Honour->save($this->data)) {
-	 		$this->Honour->save(array("name" => $this->data['AddHonour']['name'],	
-									  	 "club_id" => $this->clubId['Club']['id']));
+	 		$this->Honour->save(array("name" => $this->data['AddHonour']['name'],
+	 								  "date_created" => CakeTime::format('Y-m-d H:i:s', time()),	
+									  "club_id" => $this->clubId['Club']['id']));
 			$this->redirect(array('controller' => 'History',
 									'action' => 'index', 
 									'club' => $this->request->params['club'],
@@ -105,7 +111,8 @@ class HistoryController extends AppController {
 	}
 	public function admin_addOldplayer(){
 		if($this->OldPlayer->save($this->data)) {
-	 		$this->OldPlayer->save(array("name" => $this->data['AddOldPlayer']['name'],	
+	 		$this->OldPlayer->save(array("name" => $this->data['AddOldPlayer']['name'],
+	 									 "date_created" => CakeTime::format('Y-m-d H:i:s', time()),	
 									  	 "club_id" => $this->clubId['Club']['id']));
 	 		$this->redirect(array('controller' => 'History',
 									'action' => 'index', 
@@ -117,6 +124,7 @@ class HistoryController extends AppController {
 		if($this->Title->save($this->data)) {
 	 		$this->Title->save(array("name" => $this->data['AddTitle']['name'],
 	 								 "info" => $this->data['AddTitle']['info'],
+	 							     "date_created" => CakeTime::format('Y-m-d H:i:s', time()),
 									 "club_id" => $this->clubId['Club']['id']));
 			$this->redirect(array('controller' => 'History',
 									'action' => 'index', 

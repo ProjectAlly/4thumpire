@@ -27,7 +27,8 @@ class ClubHomeController extends AppController {
 	}
 	
 	public function admin_updateWelcomeMessage(){
-		$this->Club->updateAll(array('Club.club_message' => "'".$this->data['ClubHome']['welcome_message']."'"),
+		$this->Club->updateAll(array('Club.club_message' => "'".$this->data['ClubHome']['welcome_message']."'",
+									 'Club.date_modified' =>"'".CakeTime::format('Y-m-d H:i:s', time())."'"),
 							         array('Club.id' => $this->clubId['Club']['id']));
 		$this->redirect(array('controller' => 'ClubHome', 'action' => 'index', 'club' => $this->request->params['club']));	
 	}
