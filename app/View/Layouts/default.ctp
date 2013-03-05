@@ -99,13 +99,13 @@ body {
 
 	    <!-- Le javascript -->
 	    <!-- Placed at the end of the document so the pages load faster -->
-	    <script type="text/javascript" src="/cakephpbs/js/javascript.php"></script>
+	    <script type="text/javascript" src="/js/javascript.php"></script>
 	    <?php 
 		    if(configure::read('App.settings.asset.compression')=='1'){
-			$this->Combinator->add_libs('js', $jsFiles);
-			echo $this->Combinator->scripts('js');
+				$this->Combinator->add_libs('js', $jsFiles);
+				echo $this->Combinator->scripts('js');
 		    }else{
-			echo $this->Html->script($jsFiles);
+				echo $this->Html->script($jsFiles);
 		    }
 	    ?>
 
