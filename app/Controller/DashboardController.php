@@ -17,7 +17,7 @@ class DashboardController extends AppController{
 										'action' => 'admin_index', 
 										'club' => $this->request->params['club'],
 										'admin' => true));
-			 
+		
 		} else { $this->redirect(array('controller' => 'Users', 
 										'action' => 'admin_index', 
 										'club' => $this->request->params['club'],

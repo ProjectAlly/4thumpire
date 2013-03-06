@@ -51,7 +51,7 @@ class AppController extends Controller {
 			return true;
 		}
 		else {
-			$this->Session->setFlash("Please Log in first..");
+			$this->Session->setFlash('<strong>Please</strong> Log in first..!!','error');
 			$this->redirect(array('controller'=>'Users', 
 								'action'=>'index', 
 								'admin'=>true, 

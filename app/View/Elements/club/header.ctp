@@ -7,13 +7,13 @@
             echo $this->Html->link('Logout', array('controller' => 'Users',
                                                     'action' => 'logout',
                                                     'club' => $this->request->params['club'],
-                                                    'admin' => true), array('role' => 'button', 'class' => 'btn'));
+                                                    'admin' => true), array('role' => 'button', 'class' => 'btn pull-right'));
 	    }
 	    else {
             echo $this->Html->link('Login', array('controller' => 'Users',
                                                     'action' => 'index',
                                                     'club' => $this->request->params['club'],
-                                                    'admin' => true), array('role' => 'button', 'class' => 'btn'));
+                                                    'admin' => true), array('role' => 'button', 'class' => 'btn pull-right'));
 	    }
     ?>
 	<br/><h1><?php echo $club_info['Club']['club_name']; ?></h1><br/>
