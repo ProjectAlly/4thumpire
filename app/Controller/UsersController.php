@@ -37,7 +37,7 @@ class UsersController extends AppController{
 									     	));
     		} 
 			if($admin == null){
-                   $this->Session->setFlash("Incorrect username password combination.."); 
+                   $this->Session->setFlash('Incorrect Username & Password combination..!!', 'error'); 
             	   $this->redirect(array('controller' => 'Users',
 										'action' => 'index', 
 										'club' => $this->request->params['club'],
