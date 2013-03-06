@@ -2,3 +2,6 @@ tmp/*
 app/tmp/*
 app/tmp/logs/*
 !empty
+/app/tmp/logs/*
+.DS_Store
+error.log

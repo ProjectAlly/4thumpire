@@ -6,7 +6,7 @@
 											   ),
 							'settings' => array(
 													'asset' => array(
-																		'compression' => '1' // 0=>'no' 1=>'yes'
+																		'compression' => '0' // 0=>'no' 1=>'yes'
 																	 ),
 													'ga'    => array(
 																		'enabled' => '0',
