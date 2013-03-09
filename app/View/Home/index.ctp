@@ -2,7 +2,6 @@
 	//CSS FOR NEWS TICKER
 	echo $this->Html->css('news-ticker.css');
 ?>
-<?php echo memory_get_usage(); ?>
 	<div class="row-fluid">
 		<div class="span12">
 			<div id="myCarousel" class="carousel slide">

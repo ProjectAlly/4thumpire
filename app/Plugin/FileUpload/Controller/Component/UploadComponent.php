@@ -29,7 +29,7 @@ class UploadComponent extends Component
 
         $this->options = array(
             'script_url' => Router::url('/', true).'file_upload/handler',
-            'upload_dir' => WWW_ROOT.'files/',
+            'upload_dir' => WWW_ROOT.'uploads/',
             'upload_url' => $this->getFullUrl().'/uploads/',
             'param_name' => 'files',
             // Set the following option to 'POST', if your server does not support

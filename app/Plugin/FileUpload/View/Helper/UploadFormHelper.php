@@ -17,7 +17,7 @@ class UploadFormHelper extends AppHelper {
 	*   @param Boolean $loadExternal load external JS files needed
 	* 	@return void
 	*/
-	public function load( $url = '/file_upload/Handler', $loadExternal = true )
+	public function load( $url = '/file_upload/handler', $loadExternal = true )
 	{
 		// Remove the first `/` if it exists.
 	    if( $url[0] == '/' )
