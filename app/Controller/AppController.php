@@ -22,7 +22,6 @@
 
 App::uses('Controller', 'Controller');
 App::uses('CakeTime', 'Utility');					     	
-
 /**
  * Application Controller
  *
@@ -34,11 +33,11 @@ App::uses('CakeTime', 'Utility');
  */
 class AppController extends Controller {
 	//public $theme = 'TwitterBootstrap';
-	public $components = array('DebugKit.Toolbar','Session');
-	var $helpers = array('Cache','Html','Session','Form','Combinator.Combinator', 'Time');
+	public $components = array('DebugKit.Toolbar','Session','FileUpload.Upload');
+	var $helpers = array('Cache','Html','Session','Form','Combinator.Combinator','FileUpload.UploadForm');
 	
 	public function beforeFilter(){
-
+	$this->Upload->recursive = -1;
 	}
 	
 	function getClubId(){
