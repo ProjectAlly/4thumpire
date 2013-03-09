@@ -1,3 +1,4 @@
-<?php 
-	$this->UploadForm->load();
-?> 
+
+<?php $this->UploadForm->load() ?>
+
+ 
