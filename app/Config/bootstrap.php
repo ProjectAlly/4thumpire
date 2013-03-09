@@ -182,8 +182,7 @@ CakeLog::config('error', array(
 
 CakePlugin::load('DebugKit');
 CakePlugin::load('Combinator');
-//CakePlugin::load('FileUpload');
-CakePlugin::loadAll(array('FileUpload' => array('routes'=>false)));
+CakePlugin::load('FileUpload');
 App::uses('PhpReader', 'Configure');
 // Read config files from app/Config
 Configure::config('default', new PhpReader());

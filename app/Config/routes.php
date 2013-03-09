@@ -29,7 +29,6 @@
 	//Router::connect('/', array('controller' => 'home', 'action' => 'index', 'home'));
 	
 	// CLUB SPECIFIC URLs	
-	Router::connect('/:plugin', array('plugin'=>'file_upload'));
 	Router::connect('/:plugin/:controller', array('plugin'=>'file_upload'));
 	
 	Router::connect('/:club/admin',

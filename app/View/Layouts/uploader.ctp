@@ -4,7 +4,12 @@
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <?php
-	$cssFiles = array('bootstrap.min','bootstrap-responsive.min','fonts/fontawesome/font-awesome','main','fileuploads/file_upload_style','fileuploads/jquery.fileupload-ui');
+	$cssFiles = array('bootstrap.min',
+					  'bootstrap-responsive.min', 
+					  'fonts/fontawesome/font-awesome', 
+					  'main', 
+					  'fileuploads/file_upload_style', 
+					  'fileuploads/jquery.fileupload-ui');
 	$jsFiles = array('vendor/jquery-1.8.3.min','vendor/bootstrap.min','plugins','main');
 ?>
 <head>
@@ -69,7 +74,6 @@ body {
 <body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
-<div class="container" role="main" id="main">
 	    <!--[if lt IE 7]>
 		    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 	    <![endif]-->
