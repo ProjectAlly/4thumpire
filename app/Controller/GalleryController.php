@@ -6,7 +6,7 @@ class GalleryController extends AppController {
 	public $uses = array('Club', 'ClubPhoto', 'ClubVideo', 'AwardPhoto', 'Social');
 	
 	public function beforeFilter(){
-		$this->layout = 'uploader';
+		$this->layout = 'uploader'; //To encapsulate image uploader
 		$this->set('club_info', $this->Club->find('first' ,array('conditions' => 
 														array('Club.website' => $this->request->params['club']))));
 		$this->clubId = $this->getClubId();

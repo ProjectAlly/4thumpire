@@ -45,6 +45,8 @@ class UsersController extends AppController{
                    
 			}
 			else{
+				$this->Session->write('clubname', $this->request->params['club']);
+				$this->Session->write('clubid', $this->clubId['Club']['id']);
 				$this->Session->write('username', $this->data['User']['admin_username']);
                 if(isset($this->data['User']['remember_me'])){
                     $this->Cookie->write('name', $this->data['User']['admin_username']);

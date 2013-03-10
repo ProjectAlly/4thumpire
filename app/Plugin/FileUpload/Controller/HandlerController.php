@@ -1,8 +1,10 @@
 <?php
 class HandlerController extends FileUploadAppController {
 
+	
 	public $uses = array('FileUpload.Upload');
-
+	public $helpers = array('Session');
+	
 	function beforeFilter(){
 		parent::beforeFilter();
 		$this->Auth->allow("*");
