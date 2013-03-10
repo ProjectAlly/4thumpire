@@ -29,8 +29,6 @@
 	//Router::connect('/', array('controller' => 'home', 'action' => 'index', 'home'));
 	
 	// CLUB SPECIFIC URLs	
-	Router::connect('/:plugin/:controller', array('plugin'=>'file_upload'));
-	
 	Router::connect('/:club/admin',
 					array('prefix' =>'admin', 'admin'=>'true', 'controller'=>'Users'), 
 					array('club' => '[a-z0-9_-]+', 'pass' => array('club')));
@@ -47,6 +45,7 @@
 					array('prefix' =>'admin', 'admin'=>'true'), 
 					array('club' => '[a-z0-9_-]+', 'id'=>'[0-9]+', 'pass' => array('club', 'id')));
 					
+	Router::connect('/:plugin/:controller', array('plugin' => 'file_upload'));
 					
 	Router::connect('/:club', 
 					array('controller' => 'ClubHome', 'action' =>'index'), 
@@ -56,10 +55,12 @@
 					array('action' =>'index'), 
 					array('club' => '[a-z0-9_-]+', 'pass' => array('club')));
 	
-
+					
 	Router::connect('/', array('controller'=>'Home', 'action' => 'index'));
 	Router::connect('/:action', array('controller'=>'Home'));
 
+
+	
 	Router::parseExtensions();
 	
 /**

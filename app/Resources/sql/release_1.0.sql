@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 09, 2013 at 07:22 PM
+-- Generation Time: Mar 10, 2013 at 12:59 PM
 -- Server version: 5.5.8
 -- PHP Version: 5.3.5
 
@@ -712,16 +712,18 @@ CREATE TABLE IF NOT EXISTS `uploads` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `size` int(11) NOT NULL,
+  `page_name` varchar(255) NOT NULL,
+  `club_id` int(10) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=78 ;
 
 --
 -- Dumping data for table `uploads`
 --
 
-INSERT INTO `uploads` (`id`, `name`, `size`) VALUES
-(15, '615144_10151109234980948_1812363518_o.jpg', 67556),
-(16, '150011_10151425524834314_779569565_n.jpg', 67194);
+INSERT INTO `uploads` (`id`, `name`, `size`, `page_name`, `club_id`) VALUES
+(76, 'rc_2013-03-10-12-53-38.jpg', 67556, '', 1),
+(77, 'kkr_2013-03-10-12-54-55.jpg', 89125, '', 2);
 
 -- --------------------------------------------------------
 
@@ -744,8 +746,8 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `user_name`, `password`, `club_id`, `role`, `last_logged_in`) VALUES
-(1, 'username', 'password', 2, 1, '2013-03-06 19:12:28'),
-(2, 'royal', 'royalroyal', 1, 1, '2013-03-09 09:50:25');
+(1, 'username', 'password', 2, 1, '2013-03-10 12:58:34'),
+(2, 'royal', 'royalroyal', 1, 1, '2013-03-10 12:57:57');
 
 -- --------------------------------------------------------
 

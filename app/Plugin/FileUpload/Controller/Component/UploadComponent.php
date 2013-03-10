@@ -12,7 +12,7 @@
 
 class UploadComponent extends Component
 {
-    protected $options;
+	protected $options;
     
     /*
     * $options = array()
@@ -23,7 +23,7 @@ class UploadComponent extends Component
     *   'upload_dir' => 'files/{your-new-upload-dir}' // Default 'files/'
     * )
     */
-    function __construct( ComponentCollection $collection, $options = null ) {
+function __construct( ComponentCollection $collection, $options = null ) {
 
         $this->UploadModel = ClassRegistry::init('FileUpload.Upload');
 
@@ -76,7 +76,6 @@ class UploadComponent extends Component
         }
 
     }
-
     public function getFullUrl() {
       	return
     		(isset($_SERVER['HTTPS']) ? 'https://' : 'http://').
@@ -97,21 +96,23 @@ class UploadComponent extends Component
     }
     
     protected function get_file_object($file_name) {
-        $file_path = $this->options['upload_dir'].$file_name;
-        if (is_file($file_path) && $file_name[0] !== '.') {
-            $file = new stdClass();
-            $file->name = $file_name;
-            $file->size = filesize($file_path);
-            $file->url = $this->options['upload_url'].rawurlencode($file->name);
-            foreach($this->options['image_versions'] as $version => $options) {
-                if (is_file($options['upload_dir'].$file_name)) {
-                    $file->{$version.'_url'} = $options['upload_url']
-                        .rawurlencode($file->name);
-                }
-            }
-            $this->set_file_delete_url($file);
-            return $file;
-        }
+    	if(substr($file_name, 0, -24) == $this->club){
+	        $file_path = $this->options['upload_dir'].$file_name;
+	        if (is_file($file_path) && $file_name[0] !== '.') {
+	            $file = new stdClass();
+	            $file->name = $file_name;
+	            $file->size = filesize($file_path);
+	            $file->url = $this->options['upload_url'].rawurlencode($file->name);
+	            foreach($this->options['image_versions'] as $version => $options) {
+	                if (is_file($options['upload_dir'].$file_name)) {
+	                    $file->{$version.'_url'} = $options['upload_url']
+	                        .rawurlencode($file->name);
+	                }
+	            }
+	            $this->set_file_delete_url($file);
+	            return $file;
+	        }
+    	}
         return null;
     }
     
@@ -274,13 +275,28 @@ class UploadComponent extends Component
       	@imagedestroy($image);
       	return $success;
     }
-    
+	private function new_name($name, $type) {
+	    $final_value = trim(basename(stripslashes($name)), ".\x00..\x20");
+	    $ext = strrpos($final_value, '.');
+	    if($ext===false && preg_match('/^image\/(gif|jpe?g|png)/', $type, $matches)) {
+	    $final_value = '.'.$matches[1];
+	    }
+	    else {
+	    $final_value = substr($final_value, $ext);
+	    };
+	    // New name
+	    // New name consists of jointing a random number value - defined in the random_no() function - and the original file extension
+	    $final_value_b = $this->club."_".CakeTime::format('Y-m-d-H-i-s', time()).$final_value; 
+	    return $final_value_b;
+	}
     protected function handle_file_upload($uploaded_file, $name, $size, $type, $error) {
         $file = new stdClass();
-        $file->name = $this->trim_file_name($name, $type);
+        $file->name = $this->new_name($name, $type);
         $file->size = intval($size);
         $file->type = $type;
-        $error = $this->has_error($uploaded_file, $file, $error);
+		$file->clubid = $this->clubid;
+		$file->page = $this->page;
+		$error = $this->has_error($uploaded_file, $file, $error);
         if (!$error && $file->name) {
             $file_path = $this->options['upload_dir'].$file->name;
             $append_file = !$this->options['discard_aborted_uploads'] &&
@@ -292,15 +308,15 @@ class UploadComponent extends Component
                 // File information to save on database
                 $data = array(
                     'Upload' => array(
-                        'name' => $name,
-                        'size' => $size
+                        'name' => $file->name,
+                        'size' => $size,
+                		'club_id' => $this->clubid	
                     )
                 );
 
                 // Save on database
-                $this->UploadModel->save( $data );
-
-
+                $this->UploadModel->save($data);
+                
                 if ($append_file) {
                     file_put_contents(
                         $file_path,

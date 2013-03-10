@@ -37,6 +37,8 @@ class AppController extends Controller {
 	var $helpers = array('Cache','Html','Session','Form','Combinator.Combinator','FileUpload.UploadForm');
 	
 	public function beforeFilter(){
+		$this->Upload->clubid = $this->Session->read('clubid');
+		$this->Upload->club = $this->Session->read('clubname');
 	}
 	
 	function getClubId(){
@@ -45,7 +47,7 @@ class AppController extends Controller {
 	}
 	
 	function isAdminLogged(){
-		if($this->Session->check('username')) {
+		if($this->Session->read('clubid')) {
 			return true;
 		}
 		else {

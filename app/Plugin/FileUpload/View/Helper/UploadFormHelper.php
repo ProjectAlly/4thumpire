@@ -25,10 +25,9 @@ class UploadFormHelper extends AppHelper {
 	        $url = substr($url, 1);
 	    }
 
-		$this->_loadScripts();
-
 		$this->_loadTemplate( $url );
-
+		$this->_loadScripts();
+		
 		if( $loadExternal )
 		{
 			$this->_loadExternalJsFiles();	
@@ -75,7 +74,7 @@ class UploadFormHelper extends AppHelper {
 		</script>
 		<script id="template-download" type="text/x-tmpl">
 		{% for (var i=0, file; file=o.files[i]; i++) { %}
-		    <tr class="template-download fade">
+		    <tr class="template-download">
 		        {% if (file.error) { %}
 		            <td></td>
 		            <td class="name"><span>{%=file.name%}</span></td>
@@ -134,12 +133,16 @@ class UploadFormHelper extends AppHelper {
 	                </button>
 	                <input type="checkbox" class="toggle">
 	            </div>
-	            <div class="span5">
-	                <div class="progress progress-success progress-striped active fade">
+	            <!-- The global progress information -->
+	            <div class="span5 fileupload-progress">
+	                <!-- The global progress bar -->
+	                <div class="progress progress-success progress-striped active" role="progressbar" aria-valuemin="0" aria-valuemax="100">
 	                    <div class="bar" style="width:0%;"></div>
 	                </div>
+	                <!-- The extended global progress information -->
+	                <div class="progress-extended">&nbsp;</div>
 	            </div>
-	        </div>
+        	        </div>
 	        <div class="fileupload-loading"></div>
 	        <br>
 	        <table class="table table-striped"><tbody class="files" data-toggle="modal-gallery" data-target="#modal-gallery"></tbody></table>
