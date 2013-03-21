@@ -90,6 +90,7 @@ class UploadFormHelper extends AppHelper {
 		            <td class="size"><span>{%=o.formatFileSize(file.size)%}</span></td>
 		            <td colspan="2"></td>
 		        {% } %}
+		        
 		        <td class="delete">
 		            <button class="btn btn-danger" data-type="{%=file.delete_type%}" data-url="{%=file.delete_url%}">
 		                <i class="icon-trash icon-white"></i>
@@ -108,6 +109,7 @@ class UploadFormHelper extends AppHelper {
 	* 	@access private
 	* 	@return void
 	*/
+	
 	private function _loadTemplate( $url = null )
 	{
 		echo '<div class="container">
@@ -132,6 +134,7 @@ class UploadFormHelper extends AppHelper {
 	                    <span>Delete</span>
 	                </button>
 	                <input type="checkbox" class="toggle">
+	                
 	            </div>
 	            <!-- The global progress information -->
 	            <div class="span5 fileupload-progress">
@@ -145,9 +148,10 @@ class UploadFormHelper extends AppHelper {
         	        </div>
 	        <div class="fileupload-loading"></div>
 	        <br>
-	        <table class="table table-striped"><tbody class="files" data-toggle="modal-gallery" data-target="#modal-gallery"></tbody></table>
+	        <table role="presentation" class="table table-striped"><tbody class="files" data-toggle="modal-gallery" data-target="#modal-gallery"></tbody></table>
 	    </form>
 	</div>
+	
 	<div id="modal-gallery" class="modal modal-gallery hide fade" data-filter=":odd">
 	    <div class="modal-header">
 	        <a class="close" data-dismiss="modal">&times;</a>
@@ -183,7 +187,7 @@ class UploadFormHelper extends AppHelper {
 	*/
 	private function _loadExternalJsFiles()
 	{
-		echo '<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		echo '<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script type="text/javascript" src="'.Router::url('/', true).'file_upload/js/vendor/jquery.ui.widget.js"></script>
 		<script src="http://blueimp.github.com/JavaScript-Templates/tmpl.min.js"></script>
 		<script src="http://blueimp.github.com/JavaScript-Load-Image/load-image.min.js"></script>

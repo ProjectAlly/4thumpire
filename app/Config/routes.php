@@ -44,8 +44,9 @@
 	Router::connect('/:club/admin/:controller/:action/:id', 
 					array('prefix' =>'admin', 'admin'=>'true'), 
 					array('club' => '[a-z0-9_-]+', 'id'=>'[0-9]+', 'pass' => array('club', 'id')));
-					
+	
 	Router::connect('/:plugin/:controller', array('plugin' => 'file_upload'));
+					
 					
 	Router::connect('/:club', 
 					array('controller' => 'ClubHome', 'action' =>'index'), 
@@ -54,7 +55,6 @@
 	Router::connect('/:club/:controller', 
 					array('action' =>'index'), 
 					array('club' => '[a-z0-9_-]+', 'pass' => array('club')));
-	
 					
 	Router::connect('/', array('controller'=>'Home', 'action' => 'index'));
 	Router::connect('/:action', array('controller'=>'Home'));
