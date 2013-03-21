@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
@@ -7,12 +7,9 @@
 	$cssFiles = array('bootstrap.min',
 					  'bootstrap-responsive.min', 
 					  'fonts/fontawesome/font-awesome', 
-					  'main', 
-					  'fileuploads/file_upload_style', 
-					  'fileuploads/jquery.fileupload-ui');
+					  'main');
 	$jsFiles = array('vendor/jquery-1.8.3.min','vendor/bootstrap.min','plugins','main');
 ?>
-<head>
 	<head>
 		<meta charset="utf-8">
 	        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,7 +19,6 @@
 		<meta name="description" content="">
 		<meta name="author" content="hardik shah">
         <meta name="viewport" content="width=device-width">
-
 		<!-- icons -->
 		<?php
 		    echo $this->Html->meta('icon');
@@ -54,7 +50,10 @@
 			echo $this->fetch('css');
 			echo $this->fetch('script');
 		?>
-		<?php
+  <!--[if lt IE 7]><link rel="stylesheet" href="http://blueimp.github.com/cdn/css/bootstrap-ie6.min.css"><![endif]-->
+  <link rel="stylesheet" href="http://blueimp.github.com/Bootstrap-Image-Gallery/css/bootstrap-image-gallery.min.css">
+  <link rel="stylesheet" href="<?php echo Router::url('/', true) ?>file_upload/css/jquery.fileupload-ui.css">
+  		<?php
 			echo $this->Html->script('vendor/modernizr-2.6.2-respond-1.1.0.min');
 		?>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
@@ -65,15 +64,8 @@ body {
 }
 </style>
 
-  <link rel="stylesheet" href="<?php echo Router::url('/', true) ?>file_upload/css/file_upload_style.css">
-  <!--[if lt IE 7]><link rel="stylesheet" href="http://blueimp.github.com/cdn/css/bootstrap-ie6.min.css"><![endif]-->
-  <link rel="stylesheet" href="http://blueimp.github.com/Bootstrap-Image-Gallery/css/bootstrap-image-gallery.min.css">
-  <link rel="stylesheet" href="<?php echo Router::url('/', true) ?>file_upload/css/jquery.fileupload-ui.css">
-
-</head>
-<body>
-<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-
+    </head>
+    <body>
 	    <!--[if lt IE 7]>
 		    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 	    <![endif]-->
@@ -91,15 +83,31 @@ body {
 		 <footer>
 			<?php echo $this->element('club/footer'); ?>
 		</footer>
-</div> <!-- /container -->
 
+	    <!-- Le javascript -->
+	    <!-- Placed at the end of the document so the pages load faster -->
+	    <script type="text/javascript" src="js/javascript.php"></script>
 
-<script>
-	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-	s.parentNode.insertBefore(g,s)}(document,'script'));
-</script>
-
-</body>
+	    <!--[if lt IE 9]>
+		  <?php
+			  echo $this->Html->script('vendor/webshims/minified/polyfiller');
+		  ?>
+		  <script>
+			  $.webshims.polyfill('forms');
+		  </script>	
+	    <![endif]-->
+	    <?php
+		   if(configure::read('App.settings.ga.enabled')=='1'){
+	    ?>
+			    <script>
+				    var _gaq=[['_setAccount','<?php echo configure::read('App.settings.ga.ga-code'); ?>'],['_trackPageview']];
+				    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+				    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+				    s.parentNode.insertBefore(g,s)}(document,'script'));
+			    </script>
+	    <?php 
+		   }
+	    ?>
+  </body>
 </html>
+

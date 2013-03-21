@@ -34,7 +34,6 @@
 	<?php echo $this->fetch('content'); ?>
 </div> <!-- /container -->
 
-
 <script>
 	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
 	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
